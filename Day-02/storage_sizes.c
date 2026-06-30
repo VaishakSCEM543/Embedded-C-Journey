@@ -2,6 +2,7 @@
  * Topic   : Storage sizes, ranges, and integer overflow
  * Concept : sizeof() reveals compiler-assigned sizes; sizes vary across
  *           GCC / ARMCC / XC8 — use <stdint.h> types in embedded code
+ * Learned : Overflow wraps silently — a counter overflow in a timer ISR can cause incorrect system behaviour
  */
 
 #include <stdio.h>

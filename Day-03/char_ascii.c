@@ -3,6 +3,7 @@
  * Concept : char is a 1-byte integer; characters are stored as ASCII numbers.
  *           In embedded, uint8_t (= unsigned char) carries raw bytes over
  *           UART/SPI/I2C — the same principle applies.
+ * Learned : 'a' - 32 = 'A' works because ASCII values are just integers — arithmetic on characters is valid C
  */
 
 #include <stdio.h>

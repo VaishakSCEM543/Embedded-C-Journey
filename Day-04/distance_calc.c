@@ -3,6 +3,7 @@
  * Concept : Variable definition with unsigned char; value fits 0–255
  *           so no byte is wasted — same reasoning used for 8-bit sensor
  *           readings and register values on microcontrollers.
+ * Learned : Always match data type to the range of your data — using int where char fits wastes 3 bytes per variable
  */
 
 #include <stdio.h>

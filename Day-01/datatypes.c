@@ -2,6 +2,7 @@
  * Topic   : C Data Types — size, range, signed vs unsigned
  * Concept : Each type maps to a fixed memory size; choosing correctly
  *           matters in embedded where RAM is limited (e.g. 20KB on STM32F103)
+ * Learned : In embedded, prefer uint8_t/uint16_t/uint32_t over char/int — sizes are guaranteed across all compilers
  */
 
 #include <stdio.h>
