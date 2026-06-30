@@ -1,0 +1,34 @@
+/*
+ * Topic   : Storage sizes, ranges, and integer overflow
+ * Concept : sizeof() reveals compiler-assigned sizes; sizes vary across
+ *           GCC / ARMCC / XC8 — use <stdint.h> types in embedded code
+ */
+
+#include <stdio.h>
+#include <limits.h>
+
+int main(void)
+{
+    /* sizes */
+    printf("char      : %zu byte(s)\n", sizeof(char));
+    printf("short     : %zu byte(s)\n", sizeof(short));
+    printf("int       : %zu byte(s)\n", sizeof(int));
+    printf("long      : %zu byte(s)\n", sizeof(long));
+    printf("long long : %zu byte(s)\n", sizeof(long long));
+
+    /* ranges */
+    printf("\nsigned char   : %d to %d\n", SCHAR_MIN, SCHAR_MAX);
+    printf("unsigned char : 0 to %u\n",   UCHAR_MAX);
+    printf("signed int    : %d to %d\n",  INT_MIN,   INT_MAX);
+
+    /* overflow wraps around — dangerous in embedded timers/counters */
+    unsigned char x = 255;
+    x = x + 1;
+    printf("\nuchar 255 + 1 = %u  (overflow)\n", x);
+
+    signed char y = 127;
+    y = y + 1;
+    printf("schar 127 + 1 = %d  (overflow)\n", y);
+
+    return 0;
+}
