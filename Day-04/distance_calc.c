@@ -1,19 +1,20 @@
-/*
- * Problem : Total distance A→C given A→B = 160 km, B→C = 40 km
- * Concept : Variable definition with unsigned char; value fits 0–255
- *           so no byte is wasted — same reasoning used for 8-bit sensor
- *           readings and register values on microcontrollers.
- * Learned : Always match data type to the range of your data — using int where char fits wastes 3 bytes per variable
- */
+// Write a C program to calculate and print the total distance from point A to point C.
+
+// Given:
+
+// Distance from A to B = 160 km
+// Distance from B to C = 40 km
+
 
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    unsigned char a_b = 160;
+    unsigned char a_b =160;
     unsigned char b_c = 40;
-
-    printf("Total distance A to C: %d km\n", a_b + b_c);   /* 200 */
+    printf("The total distance from point A to point C is %d\n",a_b+b_c);
+    printf("The total distance from point A to point C is %X\n",a_b+b_c); // This will print the value in Hexadecimal 
+    printf("The total distance from point A to point C is %O\n",a_b+b_c); // This will print the value in Octal 
 
     return 0;
 }
