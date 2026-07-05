@@ -19,6 +19,8 @@ Learning embedded C systematically — one concept at a time, committed consiste
 | [char_range.c](01-Datatypes-and-Variables/char_range.c) | signed/unsigned char range, 2's complement |
 | [short_range.c](01-Datatypes-and-Variables/short_range.c) | short int range, 16-bit 2's complement |
 | [sizeof_demo.c](01-Datatypes-and-Variables/sizeof_demo.c) | sizeof() across all types — GCC vs XC8 comparison |
+| [variables.c](01-Datatypes-and-Variables/variables.c) | Variable definition, initialization, naming rules |
+| [scope.c](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
 
 ## Roadmap
 
