@@ -6,7 +6,7 @@ Learning embedded C systematically — one concept at a time, committed consiste
 
 | Section | Topic | Files |
 |---------|-------|-------|
-| [01 — Datatypes & Variables](01-Datatypes-and-Variables/) | C data types, ranges, sizeof | 7 files |
+| [01 — Datatypes & Variables](01-Datatypes-and-Variables/) | C data types, ranges, sizeof | 9 files |
 
 ## 01 — Datatypes and Variables
 
@@ -33,6 +33,14 @@ Learning embedded C systematically — one concept at a time, committed consiste
 ⬜ 06 — Communication Protocols (UART, SPI, I2C)
 ⬜ 07 — RTOS
 ```
+
+## Progress Log
+
+| Date   | Topics Covered |
+|--------|----------------|
+| 30 Jun | Data types, storage sizes, char & ASCII, variable definition exercise |
+| 04 Jul | char range & 2's complement, short int range, sizeof() operator |
+| 05 Jul | Variable definition vs declaration, naming rules, scope (local vs global) |
 
 ## Stack
 GCC · STM32 (upcoming) · ESP32 (upcoming)
