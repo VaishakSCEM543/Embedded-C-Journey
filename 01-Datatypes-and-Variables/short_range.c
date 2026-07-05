@@ -28,3 +28,11 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * OUTPUT (GCC, Windows x64):
+ *   signed short   : -32768 to 32767
+ *   unsigned short : 0 to 65535
+ *   -25 in hex     : 0xFFE7
+ *   32767 + 1      : -32768  (overflow)
+ */

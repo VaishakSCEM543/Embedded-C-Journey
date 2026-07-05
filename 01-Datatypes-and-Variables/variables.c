@@ -31,6 +31,14 @@ int main(void)
 }
 
 /*
+ * OUTPUT (GCC, Windows x64):
+ *   sensor_value : 1024
+ *   led_state    : 1
+ *   timer_ms     : 5000
+ *   exam_score   : 95
+ */
+
+/*
  * NAMING RULES (quick ref):
  *   legal   : exam_score, _value, myVar123
  *   illegal : 1score (digit first), my-var (hyphen), int (keyword)

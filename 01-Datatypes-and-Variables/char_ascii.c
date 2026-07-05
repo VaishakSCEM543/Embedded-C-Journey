@@ -32,3 +32,12 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * OUTPUT (GCC, Windows x64):
+ *   A = 65
+ *   A = 65
+ *   signed: -50 | unsigned: 200
+ *   'a' - 32 = A
+ *   (char)67 = C
+ */

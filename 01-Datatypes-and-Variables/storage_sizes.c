@@ -33,3 +33,19 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * OUTPUT (GCC, Windows x64):
+ *   char      : 1 byte(s)
+ *   short     : 2 byte(s)
+ *   int       : 4 byte(s)
+ *   long      : 4 byte(s)
+ *   long long : 8 byte(s)
+ *
+ *   signed char   : -128 to 127
+ *   unsigned char : 0 to 255
+ *   signed int    : -2147483648 to 2147483647
+ *
+ *   uchar 255 + 1 = 0  (overflow)
+ *   schar 127 + 1 = -128  (overflow)
+ */

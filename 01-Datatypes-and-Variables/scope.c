@@ -37,7 +37,13 @@ void function_score2(void)
 }
 
 /*
- * LOCAL vs GLOBAL — SCOPE DEMO 2:
+ * OUTPUT (GCC, Windows x64):
+ *   main        : score = 10
+ *   function_1  : score = 20
+ *   function_2  : score = 30
+ */
+
+/* LOCAL vs GLOBAL — SCOPE DEMO 2:
  *
  *   int a = 2;        // global
  *   int main(void) {

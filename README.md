@@ -25,7 +25,7 @@ Learning embedded C systematically — one concept at a time, committed consiste
 ## Roadmap
 
 ```
-✅ 01 — Datatypes and Variables
+✳️  01 — Datatypes and Variables (in progress)
 ⬜ 02 — Pointers and Memory
 ⬜ 03 — Bitwise Operations
 ⬜ 04 — Structures and Unions

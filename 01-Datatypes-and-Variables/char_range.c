@@ -33,3 +33,11 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * OUTPUT (GCC, Windows x64):
+ *   signed char   : -128 to 127
+ *   unsigned char : 0 to 255
+ *   -25 in hex    : 0xE7
+ *   127 + 1       : -128  (overflow)
+ */

@@ -29,3 +29,15 @@ int main(void)
 
     return 0;
 }
+
+/*
+ * OUTPUT (GCC, Windows x64):
+ *   char      : A  (65)
+ *   short     : 30000
+ *   int       : 100000
+ *   long      : 1000000
+ *   long long : 9000000000
+ *   uchar     : 200
+ *   float     : 3.14
+ *   double    : 3.14159265358979
+ */
