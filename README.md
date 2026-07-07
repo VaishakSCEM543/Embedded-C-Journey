@@ -15,7 +15,8 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
-| [**02 — Functions**](02-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, typecasting | 1 file |
+| [**03 — Functions**](02-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
 
 ---
 
@@ -36,7 +37,13 @@
 | 📄 [`scope.c`](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
 | 📄 [`scope_block.c`](01-Datatypes-and-Variables/scope_block.c) | Block scope, variable lifetime, uninitialized variable danger |
 
-### 🔹 02 — Functions
+### 🔹 02 — Pointers and Memory
+
+| File | Core Concept |
+|:-----|:-------------|
+| 📝 [`lecture-01-memory-addresses.md`](02-Pointers-and-Memory/lecture-01-memory-addresses.md) | Memory addresses, `%p` format specifier, pointers, typecasting |
+
+### 🔹 03 — Functions
 
 | File | Core Concept |
 |:-----|:-------------|
@@ -47,7 +54,8 @@
 ## 🗺️ Learning Roadmap
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
-- [ ] 🔄 **02 — Functions & Pointers** *(In Progress)*
+- [ ] 🔄 **02 — Pointers and Memory** *(In Progress)*
+- [ ] 🔄 **03 — Functions** *(In Progress)*
 - [ ] ⏳ **03 — Bitwise Operations**
 - [ ] ⏳ **04 — Structures and Unions**
 - [ ] ⏳ **05 — STM32 Bare Metal**
