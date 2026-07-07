@@ -1,48 +1,70 @@
-# Embedded C Journey
+<div align="center">
+  <h1>🚀 Embedded C Journey</h1>
+  <p><i>Learning embedded C systematically — one concept at a time, committed consistently.</i></p>
+  
+  ![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+  ![GCC](https://img.shields.io/badge/Compiler-GCC-F34F29?style=for-the-badge&logo=gnu&logoColor=white)
+  ![STM32](https://img.shields.io/badge/Target-STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
+  ![ESP32](https://img.shields.io/badge/Target-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+</div>
 
-Learning embedded C systematically — one concept at a time, committed consistently.
+---
 
-## Structure
+## 📂 Repository Structure
 
-| Section | Topic | Files |
-|---------|-------|-------|
-| [01 — Datatypes & Variables](01-Datatypes-and-Variables/) | C data types, ranges, sizeof | 10 files |
+| 📁 Section | 🎯 Topic Focus | 📄 Contents |
+|:---------|:-------------|:----------|
+| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
+| [**02 — Functions**](02-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
 
-## 01 — Datatypes and Variables
+---
 
-| File | Concept |
-|------|---------|
-| [datatypes.c](01-Datatypes-and-Variables/datatypes.c) | All C data types — size, signed vs unsigned |
-| [storage_sizes.c](01-Datatypes-and-Variables/storage_sizes.c) | sizeof(), ranges, overflow behaviour |
-| [char_ascii.c](01-Datatypes-and-Variables/char_ascii.c) | char, ASCII encoding, typecasting |
-| [distance_calc.c](01-Datatypes-and-Variables/distance_calc.c) | Variable definition exercise |
-| [char_range.c](01-Datatypes-and-Variables/char_range.c) | signed/unsigned char range, 2's complement |
-| [short_range.c](01-Datatypes-and-Variables/short_range.c) | short int range, 16-bit 2's complement |
-| [sizeof_demo.c](01-Datatypes-and-Variables/sizeof_demo.c) | sizeof() across all types — GCC vs XC8 comparison |
-| [variables.c](01-Datatypes-and-Variables/variables.c) | Variable definition, initialization, naming rules |
-| [scope.c](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
-| [scope_block.c](01-Datatypes-and-Variables/scope_block.c) | Block scope, variable lifetime, uninitialized variable danger |
+## 📚 Topics Covered
 
-## Roadmap
+### 🔹 01 — Datatypes and Variables
 
-```
-✳️  01 — Datatypes and Variables (in progress)
-⬜ 02 — Pointers and Memory
-⬜ 03 — Bitwise Operations
-⬜ 04 — Structures and Unions
-⬜ 05 — STM32 Bare Metal
-⬜ 06 — Communication Protocols (UART, SPI, I2C)
-⬜ 07 — RTOS
-```
+| File | Core Concept |
+|:-----|:-------------|
+| 📄 [`datatypes.c`](01-Datatypes-and-Variables/datatypes.c) | All C data types — size, signed vs unsigned |
+| 📄 [`storage_sizes.c`](01-Datatypes-and-Variables/storage_sizes.c) | `sizeof()`, ranges, overflow behaviour |
+| 📄 [`char_ascii.c`](01-Datatypes-and-Variables/char_ascii.c) | `char`, ASCII encoding, typecasting |
+| 📄 [`distance_calc.c`](01-Datatypes-and-Variables/distance_calc.c) | Variable definition exercise |
+| 📄 [`char_range.c`](01-Datatypes-and-Variables/char_range.c) | signed/unsigned char range, 2's complement |
+| 📄 [`short_range.c`](01-Datatypes-and-Variables/short_range.c) | `short int` range, 16-bit 2's complement |
+| 📄 [`sizeof_demo.c`](01-Datatypes-and-Variables/sizeof_demo.c) | `sizeof()` across all types — GCC vs XC8 comparison |
+| 📄 [`variables.c`](01-Datatypes-and-Variables/variables.c) | Variable definition, initialization, naming rules |
+| 📄 [`scope.c`](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
+| 📄 [`scope_block.c`](01-Datatypes-and-Variables/scope_block.c) | Block scope, variable lifetime, uninitialized variable danger |
 
-## Progress Log
+### 🔹 02 — Functions
 
-| Date   | Topics Covered |
-|--------|----------------|
-| 30 Jun | Data types, storage sizes, char & ASCII, variable definition exercise |
-| 04 Jul | char range & 2's complement, short int range, sizeof() operator |
-| 05 Jul | Variable definition vs declaration, naming rules, scope (local vs global) |
-| 06 Jul | Block scope, variable lifetime, uninitialized variable behavior |
+| File | Core Concept |
+|:-----|:-------------|
+| 📝 [`lecture-01-functions.md`](02-Functions/lecture-01-functions.md) | Functions in C (Embedded Perspective), Prototypes, `main()` |
 
-## Stack
-GCC · STM32 (upcoming) · ESP32 (upcoming)
+---
+
+## 🗺️ Learning Roadmap
+
+- [x] **01 — Datatypes and Variables** *(Completed)*
+- [ ] 🔄 **02 — Functions & Pointers** *(In Progress)*
+- [ ] ⏳ **03 — Bitwise Operations**
+- [ ] ⏳ **04 — Structures and Unions**
+- [ ] ⏳ **05 — STM32 Bare Metal**
+- [ ] ⏳ **06 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **07 — RTOS**
+
+---
+
+## ⏳ Progress Log
+
+| Date | 🎯 Topics Mastered |
+|:---:|:---|
+| **30 Jun** | Data types, storage sizes, char & ASCII, variable definition exercise |
+| **04 Jul** | `char` range & 2's complement, `short int` range, `sizeof()` operator |
+| **05 Jul** | Variable definition vs declaration, naming rules, scope (local vs global) |
+| **06 Jul** | Block scope, variable lifetime, uninitialized variable behavior |
+| **07 Jul** | **Functions** (definition, prototype, embedded perspective) & Memory Addresses (`%p`) |
+
+---
+*Consistency is the key to mastering Embedded Systems. 🛠️*
