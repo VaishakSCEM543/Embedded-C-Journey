@@ -8,6 +8,8 @@
   ![ESP32](https://img.shields.io/badge/Target-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
 </div>
 
+> **Note:** This repository contains my personal notes, code, and exercises while learning Embedded C. Inspired by Kiran Nayak's excellent Udemy course: [Microcontroller Embedded C Programming: Absolute Beginners](https://www.udemy.com/course/microcontroller-embedded-c-programming/).
+
 ---
 
 ## 📂 Repository Structure
