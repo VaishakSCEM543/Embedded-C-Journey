@@ -56,7 +56,7 @@
 ## 🗺️ Learning Roadmap
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
-- [ ] 🔄 **02 — Pointers and Memory** *(In Progress)*
+- [x] **02 — Pointers and Memory** *(Completed)*
 - [ ] 🔄 **03 — Functions** *(In Progress)*
 - [ ] ⏳ **03 — Bitwise Operations**
 - [ ] ⏳ **04 — Structures and Unions**
