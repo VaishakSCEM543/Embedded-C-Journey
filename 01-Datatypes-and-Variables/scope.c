@@ -16,7 +16,7 @@ void function_score1(void);
 void function_score2(void);
 
 int main(void)
-{
+{    // int score; // error // local varible , which is local to this main function, and not accessible in other function
     score = 10;
     printf("main        : score = %d\n", score);   /* 10 */
     function_score1();

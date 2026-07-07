@@ -43,3 +43,12 @@ int main(void)
  *   Rule: ALWAYS initialize variables at definition.
  *     int my_var = 0;   not   int my_var;
  */
+
+
+ /* So actually saying about Local variables and global
+variables local variables are like for example you take up for for loop so where you define 
+int I and that int I is actually limited to that particular loop whenever I come out of that
+loop that I A variable that is known to the compiler out of when I come out of the loop But 
+global variable is like if you want to use a variable multiple times in a function so instead
+of defining it every time in a function I define Once in a global section so that I can use 
+it whenever it is required     */
