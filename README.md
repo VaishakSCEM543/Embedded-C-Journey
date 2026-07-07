@@ -16,7 +16,7 @@
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, typecasting | 1 file |
-| [**03 — Functions**](02-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
+| [**03 — Functions**](03-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
 
 ---
 
@@ -47,7 +47,7 @@
 
 | File | Core Concept |
 |:-----|:-------------|
-| 📝 [`lecture-01-functions.md`](02-Functions/lecture-01-functions.md) | Functions in C (Embedded Perspective), Prototypes, `main()` |
+| 📝 [`lecture-01-functions.md`](03-Functions/lecture-01-functions.md) | Functions in C (Embedded Perspective), Prototypes, `main()` |
 
 ---
 
