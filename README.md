@@ -18,7 +18,7 @@
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, typecasting | 1 file |
-| [**03 — Functions**](03-Functions/) | Function definitions, prototypes, embedded use-cases | 1 file |
+| [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, embedded use-cases | 3 files |
 
 ---
 
@@ -50,6 +50,9 @@
 | File | Core Concept |
 |:-----|:-------------|
 | 📝 [`lecture-01-functions.md`](03-Functions/lecture-01-functions.md) | Functions in C (Embedded Perspective), Prototypes, `main()` |
+| 📄 [`function_add.c`](03-Functions/function_add.c) | Calling functions — raw numbers, variables, mixed arguments |
+| 📝 [`lecture-03-return-values.md`](03-Functions/lecture-03-return-values.md) | Return values — `return`, return types, caller vs callee |
+| 📄 [`function_return.c`](03-Functions/function_return.c) | Returning values — store, calculate, embedded sensor analogy |
 
 ---
 
@@ -75,6 +78,7 @@
 | **05 Jul** | Variable definition vs declaration, naming rules, scope (local vs global) |
 | **06 Jul** | Block scope, variable lifetime, uninitialized variable behavior |
 | **07 Jul** | **Functions** (definition, prototype, embedded perspective) & Memory Addresses (`%p`) |
+| **08 Jul** | **Return values** — `return` keyword, return types, caller/callee, embedded sensor pattern |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
