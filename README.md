@@ -53,6 +53,8 @@
 | 📄 [`function_add.c`](03-Functions/function_add.c) | Calling functions — raw numbers, variables, mixed arguments |
 | 📝 [`lecture-03-return-values.md`](03-Functions/lecture-03-return-values.md) | Return values — `return`, return types, caller vs callee |
 | 📄 [`function_return.c`](03-Functions/function_return.c) | Returning values — store, calculate, embedded sensor analogy |
+| 📝 [`lecture-04-multifile-header.md`](03-Functions/lecture-04-multifile-header.md) | Multi-file projects, header files, include guards, explicit typecasting |
+| 📁 [`math-project/`](03-Functions/math-project/) | `math.h` + `math.c` + `main.c` — full multi-file arithmetic project |
 
 ---
 
@@ -60,7 +62,7 @@
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **02 — Pointers and Memory** *(Completed)*
-- [ ] 🔄 **03 — Functions** *(In Progress)*
+- [/] 🔄 **03 — Functions** *(In Progress — Multi-file & Typecasting done)*
 - [ ] ⏳ **03 — Bitwise Operations**
 - [ ] ⏳ **04 — Structures and Unions**
 - [ ] ⏳ **05 — STM32 Bare Metal**
@@ -79,6 +81,7 @@
 | **06 Jul** | Block scope, variable lifetime, uninitialized variable behavior |
 | **07 Jul** | **Functions** (definition, prototype, embedded perspective) & Memory Addresses (`%p`) |
 | **08 Jul** | **Return values** — `return` keyword, return types, caller/callee, embedded sensor pattern |
+| **10 Jul** | **Multi-file projects** — `math.h`/`math.c`/`main.c`, include guards, explicit typecasting (`long long`, `float`) |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*

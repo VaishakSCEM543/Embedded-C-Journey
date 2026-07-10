@@ -16,7 +16,8 @@ int main(void)
     printf("\n--- Passing Variables ---\n");
     int valueA = 90;
     int valueB = 70;
-    function_add_numbers(valueA, valueB, 50);
+    int valueC = 55;
+    function_add_numbers(valueA, valueB, valueC);
     
     // Mixing variables and raw numbers
     printf("\n--- Mixing Variables and Numbers ---\n");
