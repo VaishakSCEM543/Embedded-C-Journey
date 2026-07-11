@@ -49,12 +49,13 @@
 
 | File | Core Concept |
 |:-----|:-------------|
-| 📝 [`lecture-01-functions.md`](03-Functions/lecture-01-functions.md) | Functions in C (Embedded Perspective), Prototypes, `main()` |
 | 📄 [`function_add.c`](03-Functions/function_add.c) | Calling functions — raw numbers, variables, mixed arguments |
 | 📝 [`lecture-03-return-values.md`](03-Functions/lecture-03-return-values.md) | Return values — `return`, return types, caller vs callee |
 | 📄 [`function_return.c`](03-Functions/function_return.c) | Returning values — store, calculate, embedded sensor analogy |
 | 📝 [`lecture-04-multifile-header.md`](03-Functions/lecture-04-multifile-header.md) | Multi-file projects, header files, include guards, explicit typecasting |
 | 📁 [`math-project/`](03-Functions/math-project/) | `math.h` + `math.c` + `main.c` — full multi-file arithmetic project |
+| 📝 [`lecture-05-typecasting.md`](03-Functions/lecture-05-typecasting.md) | Implicit vs explicit casting, data truncation, warnings in embedded |
+| 📁 [`typecast-exercise/`](03-Functions/typecast-exercise/) | Exercise: `add`, `sub`, `mul`, `divf` — all casting rules applied |
 
 ---
 
@@ -62,7 +63,7 @@
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **02 — Pointers and Memory** *(Completed)*
-- [/] 🔄 **03 — Functions** *(In Progress — Multi-file & Typecasting done)*
+- [/] 🔄 **03 — Functions** *(In Progress — Typecasting exercise done)*
 - [ ] ⏳ **03 — Bitwise Operations**
 - [ ] ⏳ **04 — Structures and Unions**
 - [ ] ⏳ **05 — STM32 Bare Metal**
@@ -82,6 +83,7 @@
 | **07 Jul** | **Functions** (definition, prototype, embedded perspective) & Memory Addresses (`%p`) |
 | **08 Jul** | **Return values** — `return` keyword, return types, caller/callee, embedded sensor pattern |
 | **10 Jul** | **Multi-file projects** — `math.h`/`math.c`/`main.c`, include guards, explicit typecasting (`long long`, `float`) |
+| **11 Jul** | **Typecasting (Lec 51)** — implicit vs explicit casting, data truncation, casting warnings in embedded; typecasting exercise project |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
