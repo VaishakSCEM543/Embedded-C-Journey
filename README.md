@@ -38,12 +38,14 @@
 | 📄 [`variables.c`](01-Datatypes-and-Variables/variables.c) | Variable definition, initialization, naming rules |
 | 📄 [`scope.c`](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
 | 📄 [`scope_block.c`](01-Datatypes-and-Variables/scope_block.c) | Block scope, variable lifetime, uninitialized variable danger |
+| 📝 [`lecture-06-scope.md`](01-Datatypes-and-Variables/lecture-06-scope.md) | Full scope notes — local/global, shadowing, block scope, embedded RAM impact |
 
 ### 🔹 02 — Pointers and Memory
 
 | File | Core Concept |
 |:-----|:-------------|
 | 📝 [`lecture-01-memory-addresses.md`](02-Pointers-and-Memory/lecture-01-memory-addresses.md) | Memory addresses, `%p` format specifier, pointers, typecasting |
+| 📄 [`address.c`](02-Pointers-and-Memory/address.c) | `&` operator, `%p`, stack layout — consecutive chars differ by 1 byte |
 
 ### 🔹 03 — Functions
 
@@ -84,6 +86,7 @@
 | **08 Jul** | **Return values** — `return` keyword, return types, caller/callee, embedded sensor pattern |
 | **10 Jul** | **Multi-file projects** — `math.h`/`math.c`/`main.c`, include guards, explicit typecasting (`long long`, `float`) |
 | **11 Jul** | **Typecasting (Lec 51)** — implicit vs explicit casting, data truncation, casting warnings in embedded; typecasting exercise project |
+| **12 Jul** | **Review & polish** — scope (local/global, shadowing, block scope, uninitialized trap); memory addresses (`&`, `%p`, stack layout); embedded RAM impact of globals |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
