@@ -39,6 +39,7 @@
 | 📄 [`scope.c`](01-Datatypes-and-Variables/scope.c) | Local vs global scope, shadowing, embedded memory impact |
 | 📄 [`scope_block.c`](01-Datatypes-and-Variables/scope_block.c) | Block scope, variable lifetime, uninitialized variable danger |
 | 📝 [`lecture-06-scope.md`](01-Datatypes-and-Variables/lecture-06-scope.md) | Full scope notes — local/global, shadowing, block scope, embedded RAM impact |
+| 📝 [`lecture-07-typecasting-practice.md`](01-Datatypes-and-Variables/lecture-07-typecasting-practice.md) | Typecasting practice notes — implicit vs explicit, overflow, truncation, multi-file exercise |
 
 ### 🔹 02 — Pointers and Memory
 
@@ -58,6 +59,7 @@
 | 📁 [`math-project/`](03-Functions/math-project/) | `math.h` + `math.c` + `main.c` — full multi-file arithmetic project |
 | 📝 [`lecture-05-typecasting.md`](03-Functions/lecture-05-typecasting.md) | Implicit vs explicit casting, data truncation, warnings in embedded |
 | 📁 [`typecast-exercise/`](03-Functions/typecast-exercise/) | Exercise: `add`, `sub`, `mul`, `divf` — all casting rules applied |
+| 📁 [`lecture-07-multifile-typecast-exercise/`](03-Functions/lecture-07-multifile-typecast-exercise/) | Revised multi-file exercise: `main.c` + `math.c` + `math.h` with full inline cast comments |
 
 ---
 
@@ -87,6 +89,7 @@
 | **10 Jul** | **Multi-file projects** — `math.h`/`math.c`/`main.c`, include guards, explicit typecasting (`long long`, `float`) |
 | **11 Jul** | **Typecasting (Lec 51)** — implicit vs explicit casting, data truncation, casting warnings in embedded; typecasting exercise project |
 | **12 Jul** | **Review & polish** — scope (local/global, shadowing, block scope, uninitialized trap); memory addresses (`&`, `%p`, stack layout); embedded RAM impact of globals |
+| **13 Jul** | **Typecasting deep-dive** — implicit vs explicit, overflow in `mul`, truncation in `divf`, multi-file exercise (`main.c` + `math.c` + `math.h`), casting promotion rules |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
