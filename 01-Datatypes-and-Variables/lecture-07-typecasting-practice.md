@@ -1,157 +1,222 @@
-# Lecture 07 � Typecasting Practice & Multi-File Exercise
+﻿# Lecture 07 — Type Casting in C
 
-> **Date studied:** 13 Jul 2026
-> **Status:** In progress � actively practising typecasting concepts
+> One of the most important lectures in C — especially for embedded systems.
+> Type casting is everywhere: ADC conversions, sensor data, UART/SPI/I2C, register operations.
 
 ---
 
-## What is Typecasting?
+## The Core Idea
 
-Typecasting = converting a variable/value from **one data type to another**.
+Think of different containers:
 
-> Warning: Data loss rule � converting from a higher data type to a lower data type **truncates** the data.
+```
+Cup (1 L)   →  char  (1 byte)
+Bucket (10 L) →  int   (4 bytes)
+Tank (100 L)  →  long  (8 bytes)
+```
+
+Water = data.  
+Moving water between containers = type casting.
+
+> **Type casting = converting data from one data type to another.**
+
+```c
+int num = 100;
+float value = (float)num;   // int → float
+```
 
 ---
 
 ## Two Types of Casting
 
-### 1. Implicit Casting (Automatic / Assumed)
-- Done **by the compiler** automatically, according to its default promotion rules.
-- You don't write anything � the compiler decides.
-
-**Example:**
-```c
-unsigned char data = 0x87 + 0x65;
-// Both constants are treated as int (4 bytes) by the compiler.
-// Compiler stores the result (0xEC) into unsigned char ? implicit truncation.
-// WARNING: possible data loss!
 ```
-
-**Key rule:** Integer constants without a suffix are `int` (4 bytes) by default.
-
----
-
-### 2. Explicit Casting (Manual / Programmer-controlled)
-- Done **by the programmer** using the cast operator: `(type)`.
-- Overrides what the compiler would do by default.
-
-**Fix with explicit cast:**
-```c
-unsigned char data = (unsigned char)(0x87 + 0x65);  /* explicit ? no warning */
+Type Casting
+│
+├── Implicit  (compiler does it automatically)
+└── Explicit  (you tell the compiler what to do)
 ```
 
 ---
 
-## When Explicit Casting is Critical
+## 1. Implicit Casting
 
-### Case 1 � Integer Multiplication Overflow
+**The compiler converts automatically. You write nothing.**
 
 ```c
-/* WRONG � int * int = int ? overflow for large values */
-long long int result = n1 * n2;
-
-/* CORRECT � cast BEFORE multiply so promotion happens first */
-long long int result = (long long int)n1 * n2;
-// n1 promoted to 8 bytes, THEN multiplied by n2.
-// long long * int = long long ? no overflow.
+float value = 10;    // compiler converts 10 (int) → 10.0 (float). No warning.
 ```
 
-> Why does order matter?
-> n1 * n2 is evaluated as int * int first (overflow), THEN stored.
-> (long long)n1 * n2 promotes n1 first, so the multiply happens in 8 bytes.
+```c
+char x = 100;        // 100 fits in a char. No warning.
+```
+
+### When does it go wrong?
+
+```c
+unsigned char x = 0x1FF;
+```
+
+The compiler treats `0x1FF` as an `int` (4 bytes) by default.
+
+```
+int:   0x000001FF  →  00000000 00000000 00000001 11111111
+                                                  ^^^^^^^^
+                                                  only this fits in 1 byte
+unsigned char:       11111111  =  0xFF
+```
+
+`0x1FF` became `0xFF`. **Data lost. Compiler warns.**
+
+> ⚠️ This is called **truncation** — the upper bytes are silently discarded.
+
+### When is there NO warning?
+
+```c
+unsigned char x = 0x8A;   // 0x8A already fits in 1 byte → no loss → no warning
+```
+
+### The Rule
+
+```
+Larger type → Smaller type   ⚠️  possible data loss
+Smaller type → Larger type   ✅  always safe
+```
 
 ---
 
-### Case 2 � Integer Division Truncation
+## 2. Explicit Casting
+
+**You write the cast. You take responsibility.**
 
 ```c
-/* WRONG � int / int = int ? decimal part lost */
-float result = 80 / 3;        /* result = 26.0, NOT 26.666... */
+x = (unsigned char)(0x87 + 0x89);
+      ^^^^^^^^^^^^^
+      You're telling the compiler: "I know. Do it anyway."
+```
 
-/* CORRECT � cast numerator to float BEFORE divide */
+Since you decided, the compiler won't warn.
+
+---
+
+## The Classic Bug — Integer Division
+
+```c
+float result = 80 / 3;
+```
+
+Most people expect `26.6667`. They get `26.000000`.
+
+**Why?**
+
+```
+80  →  int
+3   →  int
+─────────────
+int / int = int   →   80 / 3 = 26   (fraction dropped)
+
+Then: 26 (int) → 26.0 (float)   [implicit cast, but too late!]
+```
+
+The fraction was lost BEFORE the float conversion. Converting to float after can't bring it back.
+
+### Fix — cast BEFORE dividing
+
+```c
 float result = (float)80 / 3;
-// Numerator becomes float.
-// Compiler implicitly promotes denominator to float too.
-// float / float = float ? 26.666...
 ```
 
-Both of these work:
+Now:
+```
+(float)80  →  80.0f
+80.0f / 3  →  compiler promotes 3 to float automatically
+80.0 / 3.0 →  26.666666  ✅
+```
+
+> You only need to cast ONE operand. C automatically promotes the other one.
+
+---
+
+## Implicit vs Explicit — Side by Side
+
+| | Implicit | Explicit |
+|---|---|---|
+| **Who does it** | Compiler | Programmer |
+| **Syntax** | Nothing | `(type)` |
+| **Control** | Compiler's rules | You decide |
+| **Warning** | Possible (on data loss) | Usually none |
+| **Example** | `float x = 10;` | `(float)10 / 3` |
+
+---
+
+## Real Embedded Example — ADC to Voltage
+
 ```c
-(float)n1 / n2   /* cast numerator */
-n1 / (float)n2   /* cast denominator � same result */
+uint16_t adc = 2048;
+
+// WRONG — integer division
+float voltage = adc / 4095 * 3.3;
+// 2048 / 4095 = 0 (int division!) → voltage = 0.0  ❌
+
+// CORRECT — cast first
+float voltage = ((float)adc / 4095) * 3.3f;
+// 2048.0 / 4095.0 = 0.5001 → × 3.3 = 1.65V  ✅
+```
+
+This exact bug kills real embedded projects. Always cast before integer division.
+
+---
+
+## Common Embedded Casts
+
+```c
+(float)adc_value         // ADC raw → voltage calculation
+(uint8_t)data            // keep only low 8 bits for UART/SPI/I2C
+(uint32_t)timer_ticks    // widen to prevent overflow
+(int16_t)raw_sensor_data // interpret received bytes as signed
 ```
 
 ---
 
-## Multi-File Exercise � Math Project (Lecture 13)
+## Warnings Are Not Optional
 
-Practised in a 3-file project: main.c + math.c + math.h
+The instructor says this multiple times:
 
-| File    | Role |
-|---------|------|
-| math.h  | Header � function prototypes + include guard |
-| math.c  | Definitions � actual function logic |
-| main.c  | Test driver � calls each function, prints result |
+> *"Warnings related to casting are very dangerous.  
+> Most of the time you will lose information.  
+> Always resolve casting warnings."*
 
-### Functions implemented:
-
-| Function       | Return type    | Cast used           | Why                  |
-|----------------|---------------|---------------------|----------------------|
-| add(n1, n2)    | int           | none                | Safe for normal ranges |
-| sub(n1, n2)    | int           | none                | Safe                 |
-| mul(n1, n2)    | long long int | (long long int)n1   | Prevent overflow     |
-| divf(n1, n2)   | float         | (float)n1           | Prevent truncation   |
-
-### Compile command:
-```bash
-gcc main.c math.c -o math
-```
+If the compiler says `"conversion changes value"` — stop and check. It is telling you data is being lost.
 
 ---
 
-## Casting Warnings � Treat with Utmost Care
+## Revision Cheatsheet
 
-From the lecture:
-"Warnings related to casting are very dangerous. Because most of the time you will lose information.
-Those warnings should be treated with utmost care. Warnings are always dangerous and you should
-always try to resolve them."
-
-### Common warning types:
-- warning: implicit conversion loses integer precision
-- warning: conversion to 'unsigned char' from 'int' may alter its value
-
-Fix: always use explicit cast (type) when you intentionally convert down.
+| Situation | What happens | Fix |
+|-----------|-------------|-----|
+| `int → float` | Safe, value preserved | Nothing needed |
+| `float → int` | Decimal part cut off | Cast explicitly if intentional |
+| `int → char` | Upper bytes truncated | Cast explicitly + check value fits |
+| `int / int` | Fraction discarded | Cast one operand to `float` first |
+| `int literal 0xFF` | Compiler treats as `int` by default | Normal, just be aware |
 
 ---
 
-## C Type Promotion Rules (Quick Reference)
+## Interview Q&A
 
-  char ? short ? int ? long ? long long
-                  ?
-                float ? double ? long double
+**Q: What is type casting?**  
+Converting a value from one data type to another. Can be implicit (compiler) or explicit (programmer).
 
-- When two different types meet in an expression, the smaller is promoted to the larger.
-- Integer constants default to int.
-- Override with suffix: 100LL (long long), 100.0f (float), 100U (unsigned).
+**Q: What is truncation?**  
+When a larger type is stored in a smaller type, the extra (higher) bytes are discarded. Example: `int 0x1FF` → `unsigned char 0xFF`.
 
----
+**Q: Why does `int / int` give an integer result?**  
+C's rule: when both operands are integers, the result is an integer. The fractional part is simply thrown away.
 
-## Interview Q&As
+**Q: How do you fix integer division?**  
+Cast at least one operand to `float` BEFORE the division: `(float)a / b`.
 
-**Q1. Difference between implicit and explicit casting?**
-A: Implicit = compiler automatic (e.g., int ? float in mixed expression).
-   Explicit = programmer-specified using (type) cast operator to override defaults.
+**Q: Why cast `(long long)n1 * n2` instead of `(long long)(n1 * n2)`?**  
+Because `n1 * n2` happens as `int * int` first (overflow possible), then gets cast — too late. Casting `n1` first makes the entire multiplication happen in 8 bytes.
 
-**Q2. Why does (long long int)n1 * n2 work but (long long int)(n1 * n2) may not?**
-A: First form promotes n1 before the multiply � arithmetic is in 8 bytes.
-   Second form computes n1 * n2 as int * int (possible overflow) first, THEN casts � too late.
-
-**Q3. Default data type for an integer constant in C?**
-A: int (4 bytes). So 0x87 is treated as a 4-byte int, even if it fits in 1 byte.
-
-**Q4. How to force float division without changing variable types?**
-A: Cast either operand: (float)n1 / n2  OR  n1 / (float)n2.
-
-**Q5. What happens when you assign a larger type into a smaller type without a cast?**
-A: Compiler truncates the higher bytes and emits a warning.
-   Example: storing int 0x1234 into unsigned char keeps only 0x34.
+**Q: Should you ignore casting warnings?**  
+Never. They indicate real potential data loss or incorrect arithmetic, especially critical in embedded systems.
