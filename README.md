@@ -17,7 +17,7 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
-| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, typecasting | 1 file |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, typecasting | 2 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, embedded use-cases | 3 files |
 
 ---
@@ -47,6 +47,7 @@
 |:-----|:-------------|
 | 📝 [`lecture-01-memory-addresses.md`](02-Pointers-and-Memory/lecture-01-memory-addresses.md) | Memory addresses, `%p` format specifier, pointers, typecasting |
 | 📄 [`address.c`](02-Pointers-and-Memory/address.c) | `&` operator, `%p`, stack layout — consecutive chars differ by 1 byte |
+| 📝 [`lecture-02-pointer-concept.md`](02-Pointers-and-Memory/lecture-02-pointer-concept.md) | What is a pointer — address vs data, 4 pointer operations, embedded register access, pointer size |
 
 ### 🔹 03 — Functions
 
@@ -90,6 +91,7 @@
 | **11 Jul** | **Typecasting (Lec 51)** — implicit vs explicit casting, data truncation, casting warnings in embedded; typecasting exercise project |
 | **12 Jul** | **Review & polish** — scope (local/global, shadowing, block scope, uninitialized trap); memory addresses (`&`, `%p`, stack layout); embedded RAM impact of globals |
 | **13 Jul** | **Typecasting deep-dive** — implicit vs explicit, overflow in `mul`, truncation in `divf`, multi-file exercise (`main.c` + `math.c` + `math.h`), casting promotion rules |
+| **14 Jul** | **Pointers (Concept)** — pointer = memory address (not data), RAM as apartment model, 4 pointer ops (read/write/inc/dec), pointer size vs architecture, embedded GPIO register access via pointer |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
