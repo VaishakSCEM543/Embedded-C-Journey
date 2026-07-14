@@ -1,1 +1,8 @@
 git-notes.md
+
+# Compiled output — never commit binaries
+*.exe
+*.o
+*.out
+*.elf
+*.map
