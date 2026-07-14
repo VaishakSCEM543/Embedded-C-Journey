@@ -17,7 +17,7 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
-| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, typecasting | 2 files |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, typecasting | 3 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, embedded use-cases | 3 files |
 
 ---
@@ -45,9 +45,10 @@
 
 | File | Core Concept |
 |:-----|:-------------|
-| 📝 [`lecture-01-memory-addresses.md`](02-Pointers-and-Memory/lecture-01-memory-addresses.md) | Memory addresses, `%p` format specifier, pointers, typecasting |
+| 📝 [`lecture-01-memory-addresses.md`](02-Pointers-and-Memory/lecture-01-memory-addresses.md) | Memory addresses, `%p` format specifier, stack layout, pointer typecasting |
 | 📄 [`address.c`](02-Pointers-and-Memory/address.c) | `&` operator, `%p`, stack layout — consecutive chars differ by 1 byte |
 | 📝 [`lecture-02-pointer-concept.md`](02-Pointers-and-Memory/lecture-02-pointer-concept.md) | What is a pointer — address vs data, 4 pointer operations, embedded register access, pointer size |
+| 📄 [`pointer_demo.c`](02-Pointers-and-Memory/pointer_demo.c) | All 4 pointer ops in code — read, write, increment, decrement + embedded GPIO simulation |
 
 ### 🔹 03 — Functions
 
