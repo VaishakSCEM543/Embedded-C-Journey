@@ -56,6 +56,32 @@ unsigned long long int addressOfa1 = (unsigned long long int) &a1;
 printf("Address in hex: %I64X \n", addressOfa1); 
 ```
 
+## 7. Stack Layout Observation (What `address.c` Actually Reveals)
+
+When you run `address.c`, you'll see something like this:
+
+```
+Address of a: 000000000061FE1F
+Address of b: 000000000061FE1E
+Address of c: 000000000061FE1D
+Address of d: 000000000061FE1C
+Address of e: 000000000061FE1B
+Address of f: 000000000061FE1A
+```
+
+Two things to notice:
+
+**1. Each address is exactly 1 less than the previous one.**
+- `char` is 1 byte, so each variable takes up exactly 1 address slot.
+- If you used `int` variables instead, you'd see addresses differ by **4** (since `int` = 4 bytes).
+
+**2. Addresses are going DOWN (decreasing), not up.**
+- The stack on x86/x64 grows **downward** in memory.
+- The first variable declared (`a`) gets the highest address; the last (`f`) gets the lowest.
+- This is a hardware design decision — the stack starts at a high address and grows toward lower addresses.
+
+> This is exactly why in embedded systems, stack overflow means the stack has grown so large it crashes into the heap or other memory regions from above.
+
 ---
 
 ### 💡 Embedded Takeaway
