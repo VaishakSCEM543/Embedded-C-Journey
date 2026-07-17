@@ -20,7 +20,10 @@ int main() {
     printf("data from ptr : %d \n", data);
 
     /* step 6 - write operation , store 65 via pointer */
-    // *ptr = 65;
+    *ptr = 65;
+
+    /* step 7 - print var , should now be 65 */
+    printf("var after write : %d \n", var);
 
     return 0;
 }
