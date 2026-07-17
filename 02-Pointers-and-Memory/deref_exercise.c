@@ -11,7 +11,10 @@ int main() {
     printf("address of var : %p \n", (void*)&var);
 
     /* step 3 - create pointer and store address */
-    // char *ptr = &var;
+    char *ptr = &var;
+
+    /* step 4 - read operation , dereference the pointer */
+    // char data = *ptr;
 
     return 0;
 }
