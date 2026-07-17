@@ -27,3 +27,9 @@ int main() {
 
     return 0;
 }
+
+// output after running :
+// address of var : 0061FF1A
+// data from ptr : 100
+// var after write : 65
+// worked perfectly , write via pointer updated the original var
