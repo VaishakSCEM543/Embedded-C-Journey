@@ -14,7 +14,13 @@ int main() {
     char *ptr = &var;
 
     /* step 4 - read operation , dereference the pointer */
-    // char data = *ptr;
+    char data = *ptr;
+
+    /* step 5 - print the data we got */
+    printf("data from ptr : %d \n", data);
+
+    /* step 6 - write operation , store 65 via pointer */
+    // *ptr = 65;
 
     return 0;
 }
