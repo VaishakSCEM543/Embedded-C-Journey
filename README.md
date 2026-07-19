@@ -17,7 +17,7 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
-| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, dereferencing, pointer arithmetic | 6 files |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, dereferencing, pointer arithmetic | 7 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, embedded use-cases | 3 files |
 
 ---
@@ -51,6 +51,7 @@
 | 📄 [`pointer_demo.c`](02-Pointers-and-Memory/pointer_demo.c) | All 4 pointer ops in code — read, write, increment, decrement + embedded GPIO simulation |
 | 📝 [`lecture-03-dereferencing.md`](02-Pointers-and-Memory/lecture-03-dereferencing.md) | Dereferencing (`*ptr`), pointer arithmetic, safe reset pattern, embedded GPIO register write |
 | 📄 [`deref_exercise.c`](02-Pointers-and-Memory/deref_exercise.c) | Lecture 16 exercise — `char` pointer, read via `*ptr`, write via `*ptr = 65`, verified output |
+| 📄 [`pointer_exercise_lec17.c`](02-Pointers-and-Memory/pointer_exercise_lec17.c) | Lecture 17 exercise — 7-step pointer exercise, `char *pAddress`, read and write via deref, output noted |
 
 ### 🔹 03 — Functions
 
@@ -97,6 +98,7 @@
 | **14 Jul** | **Pointers (Concept)** — pointer = memory address (not data), RAM as apartment model, 4 pointer ops (read/write/inc/dec), pointer size vs architecture, embedded GPIO register access via pointer |
 | **15 Jul** | **Dereferencing & Pointer Arithmetic** — `*ptr` vs `ptr`, writing through pointer (`*ptr = 365`), pointer arithmetic steps by `sizeof(type)`, unsafe memory after `ptr+1`, safe reset pattern (`ptr = &a`) |
 | **17 Jul** | **Dereferencing Exercise (Lec 16)** — `char *ptr`, read op (`data = *ptr`), write op (`*ptr = 65`), verified `var` changed without touching it by name, output noted in comments |
+| **19 Jul** | **Pointer Exercise (Lec 17)** — 7-step exercise, `char data`, `char *pAddress`, read and write via dereference, confirmed `pAddress == &data`, `data` changed 100→65 via pointer |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
