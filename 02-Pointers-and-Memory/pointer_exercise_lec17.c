@@ -19,5 +19,11 @@ int main(void)
 
     printf("pAddress holds : %p\n", (void*)pAddress);
 
+    /* step 4 - read operation , dereference pointer to get 1 byte */
+    char value = *pAddress;
+
+    /* step 5 - print the value obtained from read operation */
+    printf("read value : %d\n", value);
+
     return 0;
 }
