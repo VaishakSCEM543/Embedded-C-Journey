@@ -73,11 +73,11 @@
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **02 — Pointers and Memory** *(Completed)*
 - [/] 🔄 **03 — Functions** *(In Progress — Typecasting exercise done)*
-- [ ] ⏳ **03 — Bitwise Operations**
-- [ ] ⏳ **04 — Structures and Unions**
-- [ ] ⏳ **05 — STM32 Bare Metal**
-- [ ] ⏳ **06 — Communication Protocols (UART, SPI, I2C)**
-- [ ] ⏳ **07 — RTOS**
+- [ ] ⏳ **04 — Bitwise Operations**
+- [ ] ⏳ **05 — Structures and Unions**
+- [ ] ⏳ **06 — STM32 Bare Metal**
+- [ ] ⏳ **07 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **08 — RTOS**
 
 ---
 
