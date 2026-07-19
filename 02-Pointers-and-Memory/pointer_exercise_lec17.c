@@ -12,5 +12,12 @@ int main(void)
     printf("value of data : %d\n", data);
     printf("address of data : %p\n", (void*)&data);
 
+    /* step 3 - create pointer variable , store address of data */
+    /* data is char so &data is char* , so pointer type is char* */
+    /* p prefix in pAddress means it is a pointer variable */
+    char *pAddress = &data;
+
+    printf("pAddress holds : %p\n", (void*)pAddress);
+
     return 0;
 }
