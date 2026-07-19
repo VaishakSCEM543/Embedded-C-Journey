@@ -16,9 +16,9 @@
 
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
-| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 10 files |
+| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, dereferencing, pointer arithmetic | 7 files |
-| [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, embedded use-cases | 3 files |
+| [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 
 ---
 
@@ -71,8 +71,8 @@
 ## 🗺️ Learning Roadmap
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
-- [x] **02 — Pointers and Memory** *(Completed)*
-- [/] 🔄 **03 — Functions** *(In Progress — Typecasting exercise done)*
+- [x] **03 — Functions** *(Completed — definitions, return values, multi-file, typecasting)*
+- → **02 — Pointers and Memory** *(In Progress — foundation done, more lectures ahead)*
 - [ ] ⏳ **04 — Bitwise Operations**
 - [ ] ⏳ **05 — Structures and Unions**
 - [ ] ⏳ **06 — STM32 Bare Metal**
