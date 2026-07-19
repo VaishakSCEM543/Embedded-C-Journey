@@ -33,3 +33,11 @@ int main(void)
 
     return 0;
 }
+
+// ran it , output was :
+// value of data : 100
+// address of data : 0061FF1A
+// pAddress holds : 0061FF1A      <- same as &data , confirmed
+// read value : 100
+// value of data after write : 65
+// write worked , data changed from 100 to 65 without touching data directly
