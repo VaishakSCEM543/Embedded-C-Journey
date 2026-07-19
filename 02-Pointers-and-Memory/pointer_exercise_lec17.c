@@ -25,5 +25,11 @@ int main(void)
     /* step 5 - print the value obtained from read operation */
     printf("read value : %d\n", value);
 
+    /* step 6 - write operation , store 65 at the address pAddress holds */
+    *pAddress = 65;
+
+    /* step 7 - print data again , should be 65 now not 100 */
+    printf("value of data after write : %d\n", data);
+
     return 0;
 }
