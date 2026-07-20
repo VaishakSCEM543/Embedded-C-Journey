@@ -24,5 +24,20 @@ int main(void)
 
     printf("short* read (2 bytes): %x \n", *pAddress3);
 
+    /* long long* pointer - should read all 8 bytes */
+    long long *pAddress4 = (long long*)&g_data;
+
+    printf("long long* (8 bytes) : %I64X \n", *pAddress4);   /* I64X for MinGW */
+
     return 0;
 }
+
+// output :
+// char* read (1 byte)  : 44
+// int*  read (4 bytes) : 11223344
+// short* read (2 bytes): 3344
+// long long* (8 bytes) : FFFEABCD11223344
+//
+// all reading from same address but different amounts
+// pointer type = how many bytes are fetched on dereference
+// char*  -> 1 byte , short* -> 2 , int* -> 4 , long long* -> 8
