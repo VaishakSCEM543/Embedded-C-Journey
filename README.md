@@ -17,7 +17,7 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
-| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, pointer concept, dereferencing, pointer arithmetic | 7 files |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types effect | 9 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 
 ---
@@ -52,6 +52,8 @@
 | 📝 [`lecture-03-dereferencing.md`](02-Pointers-and-Memory/lecture-03-dereferencing.md) | Dereferencing (`*ptr`), pointer arithmetic, safe reset pattern, embedded GPIO register write |
 | 📄 [`deref_exercise.c`](02-Pointers-and-Memory/deref_exercise.c) | Lecture 16 exercise — `char` pointer, read via `*ptr`, write via `*ptr = 65`, verified output |
 | 📄 [`pointer_exercise_lec17.c`](02-Pointers-and-Memory/pointer_exercise_lec17.c) | Lecture 17 exercise — 7-step pointer exercise, `char *pAddress`, read and write via deref, output noted |
+| 📝 [`lecture-04-pointer-types.md`](02-Pointers-and-Memory/lecture-04-pointer-types.md) | Pointer type effect on read size — `char*`=1B, `short*`=2B, `int*`=4B, `long long*`=8B, typecasting, syntax styles |
+| 📄 [`pointer_types_demo.c`](02-Pointers-and-Memory/pointer_types_demo.c) | Lecture 18 demo — same address, 4 pointer types, each fetches different byte count, output verified |
 
 ### 🔹 03 — Functions
 
@@ -99,6 +101,7 @@
 | **15 Jul** | **Dereferencing & Pointer Arithmetic** — `*ptr` vs `ptr`, writing through pointer (`*ptr = 365`), pointer arithmetic steps by `sizeof(type)`, unsafe memory after `ptr+1`, safe reset pattern (`ptr = &a`) |
 | **17 Jul** | **Dereferencing Exercise (Lec 16)** — `char *ptr`, read op (`data = *ptr`), write op (`*ptr = 65`), verified `var` changed without touching it by name, output noted in comments |
 | **19 Jul** | **Pointer Exercise (Lec 17)** — 7-step exercise, `char data`, `char *pAddress`, read and write via dereference, confirmed `pAddress == &data`, `data` changed 100→65 via pointer |
+| **20 Jul** | **Pointer Types Effect (Lec 18)** — `char*` reads 1B, `short*` 2B, `int*` 4B, `long long*` 8B from same address; typecasting LHS/RHS types, two pointer declaration styles |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
