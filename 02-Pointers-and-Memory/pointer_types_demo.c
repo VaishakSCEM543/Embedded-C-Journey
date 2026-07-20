@@ -19,5 +19,10 @@ int main(void)
 
     printf("int*  read (4 bytes) : %x \n", *pAddress2);
 
+    /* short* pointer - should read 2 bytes */
+    short *pAddress3 = (short*)&g_data;
+
+    printf("short* read (2 bytes): %x \n", *pAddress3);
+
     return 0;
 }
