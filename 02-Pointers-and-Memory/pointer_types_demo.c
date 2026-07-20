@@ -14,5 +14,10 @@ int main(void)
 
     printf("char* read (1 byte)  : %x \n", *pAddress1);
 
+    /* int* pointer - should read 4 bytes */
+    int *pAddress2 = (int*)&g_data;
+
+    printf("int*  read (4 bytes) : %x \n", *pAddress2);
+
     return 0;
 }
