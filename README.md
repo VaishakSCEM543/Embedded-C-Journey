@@ -17,7 +17,7 @@
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
-| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types effect | 9 files |
+| [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 
 ---
@@ -54,6 +54,8 @@
 | 📄 [`pointer_exercise_lec17.c`](02-Pointers-and-Memory/pointer_exercise_lec17.c) | Lecture 17 exercise — 7-step pointer exercise, `char *pAddress`, read and write via deref, output noted |
 | 📝 [`lecture-04-pointer-types.md`](02-Pointers-and-Memory/lecture-04-pointer-types.md) | Pointer type effect on read size — `char*`=1B, `short*`=2B, `int*`=4B, `long long*`=8B, typecasting, syntax styles |
 | 📄 [`pointer_types_demo.c`](02-Pointers-and-Memory/pointer_types_demo.c) | Lecture 18 demo — same address, 4 pointer types, each fetches different byte count, output verified |
+| 📝 [`lecture-05-pointer-arithmetic.md`](02-Pointers-and-Memory/lecture-05-pointer-arithmetic.md) | Pointer arithmetic — `+1` moves by `sizeof(type)`, verified for char/short/int, embedded register stepping |
+| 📄 [`pointer_arithmetic_demo.c`](02-Pointers-and-Memory/pointer_arithmetic_demo.c) | Lecture 19 demo — char*/short*/int* arithmetic, address offset confirmed in output |
 
 ### 🔹 03 — Functions
 
@@ -102,6 +104,7 @@
 | **17 Jul** | **Dereferencing Exercise (Lec 16)** — `char *ptr`, read op (`data = *ptr`), write op (`*ptr = 65`), verified `var` changed without touching it by name, output noted in comments |
 | **19 Jul** | **Pointer Exercise (Lec 17)** — 7-step exercise, `char data`, `char *pAddress`, read and write via dereference, confirmed `pAddress == &data`, `data` changed 100→65 via pointer |
 | **20 Jul** | **Pointer Types Effect (Lec 18)** — `char*` reads 1B, `short*` 2B, `int*` 4B, `long long*` 8B from same address; typecasting LHS/RHS types, two pointer declaration styles |
+| **21 Jul** | **Pointer Arithmetic (Lec 19)** — `ptr + 1` moves by `sizeof(type)`: char*=+1, short*=+2, int*=+4; verified with hex output; embedded register stepping use case |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
