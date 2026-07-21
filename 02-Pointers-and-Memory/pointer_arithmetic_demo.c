@@ -17,5 +17,14 @@ int main(void)
 
     printf("char* after +1   : %p , value : %x\n", (void*)pAddress, *pAddress);
 
+    /* short* : +1 moves address by 2 bytes , sizeof(short) = 2 */
+    short *pAddress2 = (short*)&g_data;
+
+    printf("short* base addr : %p , value : %x\n", (void*)pAddress2, *pAddress2);
+
+    pAddress2 = pAddress2 + 1;   /* moves 2 bytes forward */
+
+    printf("short* after +1  : %p , value : %x\n", (void*)pAddress2, *pAddress2);
+
     return 0;
 }
