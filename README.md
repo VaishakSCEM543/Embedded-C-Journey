@@ -19,6 +19,7 @@
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
+| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, contiguous memory, base address | 2 files |
 
 ---
 
@@ -70,6 +71,13 @@
 | 📁 [`typecast-exercise/`](03-Functions/typecast-exercise/) | Exercise: `add`, `sub`, `mul`, `divf` — all casting rules applied |
 | 📁 [`lecture-07-multifile-typecast-exercise/`](03-Functions/lecture-07-multifile-typecast-exercise/) | Revised multi-file exercise: `main.c` + `math.c` + `math.h` with full inline cast comments |
 
+### 🔹 04 — Arrays
+
+| File | Core Concept |
+|:-----|:-------------|
+| 📝 [`lecture-01-arrays-intro.md`](04-Arrays/lecture-01-arrays-intro.md) | Arrays syntax, why they are needed, memory storage, calculating size, base address |
+| 📄 [`array_basics.c`](04-Arrays/array_basics.c) | `uint8_t` vs `uint32_t` arrays, `sizeof` operation, base address printing via `%p` |
+
 ---
 
 ## 🗺️ Learning Roadmap
@@ -77,11 +85,12 @@
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **03 — Functions** *(Completed — definitions, return values, multi-file, typecasting)*
 - → **02 — Pointers and Memory** *(In Progress — foundation done, more lectures ahead)*
-- [ ] ⏳ **04 — Bitwise Operations**
-- [ ] ⏳ **05 — Structures and Unions**
-- [ ] ⏳ **06 — STM32 Bare Metal**
-- [ ] ⏳ **07 — Communication Protocols (UART, SPI, I2C)**
-- [ ] ⏳ **08 — RTOS**
+- → **04 — Arrays** *(In Progress — introduction, syntax, base address)*
+- [ ] ⏳ **05 — Bitwise Operations**
+- [ ] ⏳ **06 — Structures and Unions**
+- [ ] ⏳ **07 — STM32 Bare Metal**
+- [ ] ⏳ **08 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **09 — RTOS**
 
 ---
 
@@ -105,6 +114,7 @@
 | **19 Jul** | **Pointer Exercise (Lec 17)** — 7-step exercise, `char data`, `char *pAddress`, read and write via dereference, confirmed `pAddress == &data`, `data` changed 100→65 via pointer |
 | **20 Jul** | **Pointer Types Effect (Lec 18)** — `char*` reads 1B, `short*` 2B, `int*` 4B, `long long*` 8B from same address; typecasting LHS/RHS types, two pointer declaration styles |
 | **21 Jul** | **Pointer Arithmetic (Lec 19)** — `ptr + 1` moves by `sizeof(type)`: char*=+1, short*=+2, int*=+4; verified with hex output; embedded register stepping use case |
+| **24 Jul** | **Arrays Intro** — Array definition syntax, contiguous memory storage, calculating array size with `sizeof()`, array name as a base pointer to the first element |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
