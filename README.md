@@ -19,7 +19,7 @@
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
-| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, contiguous memory, base address | 2 files |
+| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, contiguous memory, base address | 4 files |
 
 ---
 
@@ -77,6 +77,8 @@
 |:-----|:-------------|
 | 📝 [`lecture-01-arrays-intro.md`](04-Arrays/lecture-01-arrays-intro.md) | Arrays syntax, why they are needed, memory storage, calculating size, base address |
 | 📄 [`array_basics.c`](04-Arrays/array_basics.c) | `uint8_t` vs `uint32_t` arrays, `sizeof` operation, base address printing via `%p` |
+| 📝 [`lecture-02-array-read-write.md`](04-Arrays/lecture-02-array-read-write.md) | Array initialization rules (partial/omitted sizes), C99 VLAs, pointer manipulation vs indexing (`arr[0]` == `*(arr+0)`) |
+| 📄 [`array_read_write.c`](04-Arrays/array_read_write.c) | Demo of partial initialization zero-filling, array modification via pointers vs indexing, VLA declaration |
 
 ---
 
@@ -115,6 +117,7 @@
 | **20 Jul** | **Pointer Types Effect (Lec 18)** — `char*` reads 1B, `short*` 2B, `int*` 4B, `long long*` 8B from same address; typecasting LHS/RHS types, two pointer declaration styles |
 | **21 Jul** | **Pointer Arithmetic (Lec 19)** — `ptr + 1` moves by `sizeof(type)`: char*=+1, short*=+2, int*=+4; verified with hex output; embedded register stepping use case |
 | **24 Jul** | **Arrays Intro** — Array definition syntax, contiguous memory storage, calculating array size with `sizeof()`, array name as a base pointer to the first element |
+| **25 Jul** | **Array Initializations & Reading/Writing** — Partial initialization zero-filling, C99 Variable Length Arrays (VLA), array indexing vs pointer manipulation (`arr[i] == *(arr + i)`), loop traversal |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
