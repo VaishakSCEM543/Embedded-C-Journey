@@ -79,6 +79,8 @@
 | 📄 [`array_basics.c`](04-Arrays/array_basics.c) | `uint8_t` vs `uint32_t` arrays, `sizeof` operation, base address printing via `%p` |
 | 📝 [`lecture-02-array-read-write.md`](04-Arrays/lecture-02-array-read-write.md) | Array initialization rules (partial/omitted sizes), C99 VLAs, pointer manipulation vs indexing (`arr[0]` == `*(arr+0)`) |
 | 📄 [`array_read_write.c`](04-Arrays/array_read_write.c) | Demo of partial initialization zero-filling, array modification via pointers vs indexing, VLA declaration |
+| 📝 [`lecture-03-passing-arrays.md`](04-Arrays/lecture-03-passing-arrays.md) | Passing arrays to functions, array decay, `const` pointers, subarray slicing |
+| 📄 [`passing_arrays.c`](04-Arrays/passing_arrays.c) | Demo of calculating length, passing arrays to functions, modifying arrays, and subarray passing |
 
 ---
 
