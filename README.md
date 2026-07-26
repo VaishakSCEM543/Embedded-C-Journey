@@ -86,7 +86,7 @@
 
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **03 — Functions** *(Completed — definitions, return values, multi-file, typecasting)*
-- → **02 — Pointers and Memory** *(In Progress — foundation done, more lectures ahead)*
+- [x] **02 — Pointers and Memory** *(Completed — addresses, dereferencing, types, arithmetic)*
 - → **04 — Arrays** *(In Progress — introduction, syntax, base address)*
 - [ ] ⏳ **05 — Bitwise Operations**
 - [ ] ⏳ **06 — Structures and Unions**
