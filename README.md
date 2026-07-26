@@ -118,6 +118,7 @@
 | **21 Jul** | **Pointer Arithmetic (Lec 19)** — `ptr + 1` moves by `sizeof(type)`: char*=+1, short*=+2, int*=+4; verified with hex output; embedded register stepping use case |
 | **24 Jul** | **Arrays Intro** — Array definition syntax, contiguous memory storage, calculating array size with `sizeof()`, array name as a base pointer to the first element |
 | **25 Jul** | **Array Initializations & Reading/Writing** — Partial initialization zero-filling, C99 Variable Length Arrays (VLA), array indexing vs pointer manipulation (`arr[i] == *(arr + i)`), loop traversal |
+| **26 Jul** | **Documentation Upgrade** — Restructured Array notes with premium markdown layout, GitHub alerts, glossary, and interview QA |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
