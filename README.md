@@ -81,6 +81,7 @@
 | 📄 [`array_read_write.c`](04-Arrays/array_read_write.c) | Demo of partial initialization zero-filling, array modification via pointers vs indexing, VLA declaration |
 | 📝 [`lecture-03-passing-arrays.md`](04-Arrays/lecture-03-passing-arrays.md) | Passing arrays to functions, array decay, `const` pointers, subarray slicing |
 | 📄 [`passing_arrays.c`](04-Arrays/passing_arrays.c) | Demo of calculating length, passing arrays to functions, modifying arrays, and subarray passing |
+| 📄 [`array_exercises_lec3.c`](04-Arrays/array_exercises_lec3.c) | Solutions to Lecture 3 coding exercises (sum, max, reverse print, and array swapping) |
 
 ---
 
@@ -121,6 +122,7 @@
 | **24 Jul** | **Arrays Intro** — Array definition syntax, contiguous memory storage, calculating array size with `sizeof()`, array name as a base pointer to the first element |
 | **25 Jul** | **Array Initializations & Reading/Writing** — Partial initialization zero-filling, C99 Variable Length Arrays (VLA), array indexing vs pointer manipulation (`arr[i] == *(arr + i)`), loop traversal |
 | **26 Jul** | **Passing Arrays to Functions** — Array decay to pointer, calculating length vs pointer size, `const` pointers for read-only safety, and subarray slicing (`&arr[2]`) |
+| **29 Jul** | **Array Practice Exercises** — Implemented array utility functions: sum, max, reverse print, and array swapping algorithms using pointer arithmetic |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
