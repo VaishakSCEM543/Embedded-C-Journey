@@ -123,6 +123,7 @@
 | **25 Jul** | **Array Initializations & Reading/Writing** — Partial initialization zero-filling, C99 Variable Length Arrays (VLA), array indexing vs pointer manipulation (`arr[i] == *(arr + i)`), loop traversal |
 | **26 Jul** | **Passing Arrays to Functions** — Array decay to pointer, calculating length vs pointer size, `const` pointers for read-only safety, and subarray slicing (`&arr[2]`) |
 | **29 Jul** | **Array Practice Exercises** — Implemented array utility functions: sum, max, reverse print, and array swapping algorithms using pointer arithmetic |
+| **30 Jul** | **Build Automation** — Added a `Makefile` to the Arrays module to automate the compilation of multiple C files using `gcc` and `make` |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
