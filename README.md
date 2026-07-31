@@ -19,7 +19,7 @@
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
-| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays, strings, `sizeof` vs `strlen` | 10 files |
+| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays, strings, `sizeof` vs `strlen` | 13 files |
 
 ---
 
@@ -84,6 +84,9 @@
 | 📄 [`array_exercises_lec3.c`](04-Arrays/array_exercises_lec3.c) | Solutions to Lecture 3 coding exercises (sum, max, reverse print, and array swapping) |
 | 📝 [`lecture-04-strings-intro.md`](04-Arrays/lecture-04-strings-intro.md) | Strings vs char arrays, null character (`'\0'`), and `sizeof()` vs `strlen()` differences |
 | 📄 [`strings_intro.c`](04-Arrays/strings_intro.c) | Demonstrates string partial initialization, missing null character pitfall, and `strlen` usage |
+| 📄 [`string_length.c`](04-Arrays/string_length.c) | Custom `strlen` implementation demonstrating null terminator logic |
+| 📄 [`string_copy.c`](04-Arrays/string_copy.c) | Custom `strcpy` implementation showing array copy bounds |
+| 📄 [`string_compare.c`](04-Arrays/string_compare.c) | Custom `strcmp` implementation checking character-by-character matches |
 
 ---
 
