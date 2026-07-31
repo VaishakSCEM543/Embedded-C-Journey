@@ -82,6 +82,7 @@
 | 📝 [`lecture-03-passing-arrays.md`](04-Arrays/lecture-03-passing-arrays.md) | Passing arrays to functions, array decay, `const` pointers, subarray slicing |
 | 📄 [`passing_arrays.c`](04-Arrays/passing_arrays.c) | Demo of calculating length, passing arrays to functions, modifying arrays, and subarray passing |
 | 📄 [`array_exercises_lec3.c`](04-Arrays/array_exercises_lec3.c) | Solutions to Lecture 3 coding exercises (sum, max, reverse print, and array swapping) |
+| ⚙️ [`Makefile`](04-Arrays/Makefile) | Build automation script to compile all C files in the Arrays module |
 | 📝 [`lecture-04-strings-intro.md`](04-Arrays/lecture-04-strings-intro.md) | Strings vs char arrays, null character (`'\0'`), and `sizeof()` vs `strlen()` differences |
 | 📄 [`strings_intro.c`](04-Arrays/strings_intro.c) | Demonstrates string partial initialization, missing null character pitfall, and `strlen` usage |
 | 📄 [`string_length.c`](04-Arrays/string_length.c) | Custom `strlen` implementation demonstrating null terminator logic |
