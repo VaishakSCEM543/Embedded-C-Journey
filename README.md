@@ -82,6 +82,8 @@
 | 📝 [`lecture-03-passing-arrays.md`](04-Arrays/lecture-03-passing-arrays.md) | Passing arrays to functions, array decay, `const` pointers, subarray slicing |
 | 📄 [`passing_arrays.c`](04-Arrays/passing_arrays.c) | Demo of calculating length, passing arrays to functions, modifying arrays, and subarray passing |
 | 📄 [`array_exercises_lec3.c`](04-Arrays/array_exercises_lec3.c) | Solutions to Lecture 3 coding exercises (sum, max, reverse print, and array swapping) |
+| 📝 [`lecture-04-strings-intro.md`](04-Arrays/lecture-04-strings-intro.md) | Strings vs char arrays, null character (`'\0'`), and `sizeof()` vs `strlen()` differences |
+| 📄 [`strings_intro.c`](04-Arrays/strings_intro.c) | Demonstrates string partial initialization, missing null character pitfall, and `strlen` usage |
 
 ---
 
@@ -124,6 +126,7 @@
 | **26 Jul** | **Passing Arrays to Functions** — Array decay to pointer, calculating length vs pointer size, `const` pointers for read-only safety, and subarray slicing (`&arr[2]`) |
 | **29 Jul** | **Array Practice Exercises** — Implemented array utility functions: sum, max, reverse print, and array swapping algorithms using pointer arithmetic |
 | **30 Jul** | **Build Automation** — Added a `Makefile` to the Arrays module to automate the compilation of multiple C files using `gcc` and `make` |
+| **31 Jul** | **Strings in C** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, partial initialization, and `sizeof()` vs `strlen()` |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
