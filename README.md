@@ -19,7 +19,8 @@
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
-| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays, strings, `sizeof` vs `strlen` | 13 files |
+| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
+| [**05 — Strings**](05-Strings/) | Strings vs char arrays, null character, string algorithms (`strlen`, `strcpy`) | 6 files |
 
 ---
 
@@ -83,11 +84,16 @@
 | 📄 [`passing_arrays.c`](04-Arrays/passing_arrays.c) | Demo of calculating length, passing arrays to functions, modifying arrays, and subarray passing |
 | 📄 [`array_exercises_lec3.c`](04-Arrays/array_exercises_lec3.c) | Solutions to Lecture 3 coding exercises (sum, max, reverse print, and array swapping) |
 | ⚙️ [`Makefile`](04-Arrays/Makefile) | Build automation script to compile all C files in the Arrays module |
-| 📝 [`lecture-04-strings-intro.md`](04-Arrays/lecture-04-strings-intro.md) | Strings vs char arrays, null character (`'\0'`), and `sizeof()` vs `strlen()` differences |
-| 📄 [`strings_intro.c`](04-Arrays/strings_intro.c) | Demonstrates string partial initialization, missing null character pitfall, and `strlen` usage |
-| 📄 [`string_length.c`](04-Arrays/string_length.c) | Custom `strlen` implementation demonstrating null terminator logic |
-| 📄 [`string_copy.c`](04-Arrays/string_copy.c) | Custom `strcpy` implementation showing array copy bounds |
-| 📄 [`string_compare.c`](04-Arrays/string_compare.c) | Custom `strcmp` implementation checking character-by-character matches |
+### 🔹 05 — Strings
+
+| File | Core Concept |
+|:-----|:-------------|
+| 📝 [`lecture-01-strings-intro.md`](05-Strings/lecture-01-strings-intro.md) | Strings vs char arrays, null character (`'\0'`), and `sizeof()` vs `strlen()` differences |
+| 📄 [`strings_intro.c`](05-Strings/strings_intro.c) | Demonstrates string partial initialization, missing null character pitfall, and `strlen` usage |
+| 📄 [`string_length.c`](05-Strings/string_length.c) | Custom `strlen` implementation demonstrating null terminator logic |
+| 📄 [`string_copy.c`](05-Strings/string_copy.c) | Custom `strcpy` implementation showing array copy bounds |
+| 📄 [`string_compare.c`](05-Strings/string_compare.c) | Custom `strcmp` implementation checking character-by-character matches |
+| ⚙️ [`Makefile`](05-Strings/Makefile) | Build automation script to compile all C files in the Strings module |
 
 ---
 
@@ -96,12 +102,13 @@
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **03 — Functions** *(Completed — definitions, return values, multi-file, typecasting)*
 - [x] **02 — Pointers and Memory** *(Completed — addresses, dereferencing, types, arithmetic)*
-- → **04 — Arrays** *(In Progress — initialization, passing to functions, strings, memory footprint)*
-- [ ] ⏳ **05 — Bitwise Operations**
-- [ ] ⏳ **06 — Structures and Unions**
-- [ ] ⏳ **07 — STM32 Bare Metal**
-- [ ] ⏳ **08 — Communication Protocols (UART, SPI, I2C)**
-- [ ] ⏳ **09 — RTOS**
+- [x] **04 — Arrays** *(Completed — initialization, passing to functions, memory footprint)*
+- → **05 — Strings in C** *(In Progress — char arrays, null terminator, algorithms)*
+- [ ] ⏳ **06 — Bitwise Operations**
+- [ ] ⏳ **07 — Structures and Unions**
+- [ ] ⏳ **08 — STM32 Bare Metal**
+- [ ] ⏳ **09 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **10 — RTOS**
 
 ---
 
