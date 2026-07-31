@@ -19,7 +19,7 @@
 | [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
-| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, contiguous memory, base address | 4 files |
+| [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays, strings, `sizeof` vs `strlen` | 10 files |
 
 ---
 
@@ -92,7 +92,7 @@
 - [x] **01 — Datatypes and Variables** *(Completed)*
 - [x] **03 — Functions** *(Completed — definitions, return values, multi-file, typecasting)*
 - [x] **02 — Pointers and Memory** *(Completed — addresses, dereferencing, types, arithmetic)*
-- → **04 — Arrays** *(In Progress — introduction, syntax, base address)*
+- → **04 — Arrays** *(In Progress — initialization, passing to functions, strings, memory footprint)*
 - [ ] ⏳ **05 — Bitwise Operations**
 - [ ] ⏳ **06 — Structures and Unions**
 - [ ] ⏳ **07 — STM32 Bare Metal**
