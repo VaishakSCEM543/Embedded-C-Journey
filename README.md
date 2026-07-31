@@ -129,7 +129,7 @@
 | **26 Jul** | **Passing Arrays to Functions** — Array decay to pointer, calculating length vs pointer size, `const` pointers for read-only safety, and subarray slicing (`&arr[2]`) |
 | **29 Jul** | **Array Practice Exercises** — Implemented array utility functions: sum, max, reverse print, and array swapping algorithms using pointer arithmetic |
 | **30 Jul** | **Build Automation** — Added a `Makefile` to the Arrays module to automate the compilation of multiple C files using `gcc` and `make` |
-| **31 Jul** | **Strings in C** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, partial initialization, and `sizeof()` vs `strlen()` |
+| **31 Jul** | **Strings in C** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, and `sizeof()` vs `strlen()`. Implemented custom `strlen`, `strcpy`, and `strcmp` algorithms from scratch. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
