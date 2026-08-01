@@ -20,7 +20,7 @@
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
-| [**05 — Strings**](05-Strings/) | Strings vs char arrays, null character, string algorithms (`strlen`, `strcpy`) | 6 files |
+| [**05 — Strings**](05-Strings/) | Strings vs char arrays, null character, string algorithms, RAM vs ROM, `const char *` | 8 files |
 
 ---
 
@@ -94,6 +94,8 @@
 | 📄 [`string_copy.c`](05-Strings/string_copy.c) | Custom `strcpy` implementation showing array copy bounds |
 | 📄 [`string_compare.c`](05-Strings/string_compare.c) | Custom `strcmp` implementation checking character-by-character matches |
 | ⚙️ [`Makefile`](05-Strings/Makefile) | Build automation script to compile all C files in the Strings module |
+| 📝 [`lecture-02-string-literals.md`](05-Strings/lecture-02-string-literals.md) | String literals vs char arrays, RAM vs ROM storage, `const char *`, modifiability |
+| 📄 [`string_literals_demo.c`](05-Strings/string_literals_demo.c) | Demo: char array modification (safe) vs char pointer to literal (read-only), address comparison |
 
 ---
 
@@ -137,7 +139,8 @@
 | **26 Jul** | **Passing Arrays to Functions** — Array decay to pointer, calculating length vs pointer size, `const` pointers for read-only safety, and subarray slicing (`&arr[2]`) |
 | **29 Jul** | **Array Practice Exercises** — Implemented array utility functions: sum, max, reverse print, and array swapping algorithms using pointer arithmetic |
 | **30 Jul** | **Build Automation** — Added a `Makefile` to the Arrays module to automate the compilation of multiple C files using `gcc` and `make` |
-| **31 Jul** | **Strings in C** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, and `sizeof()` vs `strlen()`. Implemented custom `strlen`, `strcpy`, and `strcmp` algorithms from scratch. |
+| **31 Jul** | **Strings in C (Lec 1)** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, and `sizeof()` vs `strlen()`. Implemented custom `strlen`, `strcpy`, and `strcmp` algorithms from scratch. |
+| **01 Aug** | **String Literals (Lec 2)** — `char[]` vs `char *`, RAM vs ROM/Flash memory layout, why string literals are read-only, `const char *` best practice, debugger address verification on STM32 (`0x2000xxxx` vs `0x0800xxxx`). |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
