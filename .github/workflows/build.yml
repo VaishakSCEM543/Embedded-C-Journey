@@ -1,0 +1,85 @@
+name: Build All Modules
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: GCC Build Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GCC
+        run: sudo apt-get install -y gcc
+
+      - name: Build Module 01 — Datatypes and Variables
+        working-directory: 01-Datatypes-and-Variables
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 01 — OK"
+
+      - name: Build Module 02 — Pointers and Memory
+        working-directory: 02-Pointers-and-Memory
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 02 — OK"
+
+      - name: Build Module 03 — Functions (single-file)
+        working-directory: 03-Functions
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 03 single-file — OK"
+
+      - name: Build Module 03 — math-project
+        working-directory: 03-Functions/math-project
+        run: |
+          gcc -Wall -Wextra -std=c99 main.c math.c -o math_project.out
+          echo "Module 03 math-project — OK"
+
+      - name: Build Module 03 — typecast-exercise
+        working-directory: 03-Functions/typecast-exercise
+        run: |
+          gcc -Wall -Wextra -std=c99 main.c math.c -o typecast.out
+          echo "Module 03 typecast — OK"
+
+      - name: Build Module 03 — multifile typecast exercise
+        working-directory: 03-Functions/lecture-07-multifile-typecast-exercise
+        run: |
+          gcc -Wall -Wextra -std=c99 main.c math.c -o typecast2.out
+          echo "Module 03 typecast2 — OK"
+
+      - name: Build Module 04 — Arrays
+        working-directory: 04-Arrays
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 04 — OK"
+
+      - name: Build Module 05 — Strings
+        working-directory: 05-Strings
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 05 — OK"
+
+      - name: All modules built successfully
+        run: echo "✅ All Embedded C modules compiled without errors."
