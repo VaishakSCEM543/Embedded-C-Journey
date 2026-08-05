@@ -21,7 +21,7 @@
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
-| [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory | 10 files |
+| [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
 
 ---
 
@@ -99,6 +99,7 @@
 | 📄 [`string_literals_demo.c`](05-Strings/string_literals_demo.c) | Demo: char array modification (safe) vs char pointer to literal (read-only), address comparison |
 | 📝 [`lecture-03-part1-array-addresses.md`](05-Strings/lecture-03-part1-array-addresses.md) | Array addresses — `msg1` vs `&msg1` vs `&msg1[0]`, types, array decay, pointer arithmetic trap |
 | 📝 [`lecture-03-part2-stack-memory.md`](05-Strings/lecture-03-part2-stack-memory.md) | Stack memory — local array lifetime, SP register, function call lifecycle, dangling pointer danger |
+| 📝 [`lecture-03-part3-flash-to-ram.md`](05-Strings/lecture-03-part3-flash-to-ram.md) | Flash-to-RAM copy — two copies of string, compile vs startup vs runtime, global vs local init |
 
 ---
 
@@ -145,6 +146,7 @@
 | **31 Jul** | **Strings in C (Lec 1)** — Character arrays, null terminator (`'\0'`) mechanics, memory footprint, and `sizeof()` vs `strlen()`. Implemented custom `strlen`, `strcpy`, and `strcmp` algorithms from scratch. |
 | **01 Aug** | **String Literals (Lec 2)** — `char[]` vs `char *`, RAM vs ROM/Flash memory layout, why string literals are read-only, `const char *` best practice, debugger address verification on STM32. |
 | **04 Aug** | **Array Addresses & Stack Memory (Lec 3)** — `msg1` vs `&msg1` vs `&msg1[0]` (same value, different types), array decay, stack memory layout, SP register, local array lifetime, dangling pointer danger. |
+| **05 Aug** | **Flash-to-RAM Copy (Lec 3 Part 3)** — Why two copies of a string exist (Flash + Stack), compile vs startup vs runtime initialization, global vs local variable init difference, STM32 memory map (`0x0800` Flash, `0x2000` RAM). |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
