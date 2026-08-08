@@ -22,6 +22,7 @@
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
 | [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
+| [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 3 files |
 
 ---
 
@@ -110,11 +111,12 @@
 - [x] **02 — Pointers and Memory** *(Completed — addresses, dereferencing, types, arithmetic)*
 - [x] **04 — Arrays** *(Completed — initialization, passing to functions, memory footprint)*
 - → **05 — Strings in C** *(In Progress — char arrays, null terminator, algorithms)*
-- [ ] ⏳ **06 — Bitwise Operations**
-- [ ] ⏳ **07 — Structures and Unions**
-- [ ] ⏳ **08 — STM32 Bare Metal**
-- [ ] ⏳ **09 — Communication Protocols (UART, SPI, I2C)**
-- [ ] ⏳ **10 — RTOS**
+- → **06 — Storage Classes** *(In Progress — static keyword, scope/visibility/lifetime)*
+- [ ] ⏳ **07 — Bitwise Operations**
+- [ ] ⏳ **08 — Structures and Unions**
+- [ ] ⏳ **09 — STM32 Bare Metal**
+- [ ] ⏳ **10 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **11 — RTOS**
 
 ---
 
@@ -147,6 +149,7 @@
 | **01 Aug** | **String Literals (Lec 2)** — `char[]` vs `char *`, RAM vs ROM/Flash memory layout, why string literals are read-only, `const char *` best practice, debugger address verification on STM32. |
 | **04 Aug** | **Array Addresses & Stack Memory (Lec 3)** — `msg1` vs `&msg1` vs `&msg1[0]` (same value, different types), array decay, stack memory layout, SP register, local array lifetime, dangling pointer danger. |
 | **05 Aug** | **Flash-to-RAM Copy (Lec 3 Part 3)** — Why two copies of a string exist (Flash + Stack), compile vs startup vs runtime initialization, global vs local variable init difference, STM32 memory map (`0x0800` Flash, `0x2000` RAM). |
+| **08 Aug** | **Storage Classes — `static` Keyword (Lec 1)** — Scope, visibility, lifetime explained; why local variables lose value; global variable dangers; `static` local = function-only visibility + program-long lifetime; embedded use: ISR debounce, state machines. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
