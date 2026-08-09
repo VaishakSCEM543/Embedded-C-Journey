@@ -22,7 +22,7 @@
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
 | [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
-| [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 5 files |
+| [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 6 files |
 
 ---
 
@@ -150,7 +150,7 @@
 | **04 Aug** | **Array Addresses & Stack Memory (Lec 3)** — `msg1` vs `&msg1` vs `&msg1[0]` (same value, different types), array decay, stack memory layout, SP register, local array lifetime, dangling pointer danger. |
 | **05 Aug** | **Flash-to-RAM Copy (Lec 3 Part 3)** — Why two copies of a string exist (Flash + Stack), compile vs startup vs runtime initialization, global vs local variable init difference, STM32 memory map (`0x0800` Flash, `0x2000` RAM). |
 | **08 Aug** | **Storage Classes — `static` Keyword (Lec 1)** — Scope, visibility, lifetime explained; why local variables lose value; global variable dangers; `static` local = function-only visibility + program-long lifetime; embedded use: ISR debounce, state machines. |
-| **09 Aug** | **`static` Across Files (Lec 2)** — Internal vs external linkage, `extern` keyword, definition vs declaration, `static` global = file-private variable, `static` function = file-private function, embedded driver encapsulation pattern. |
+| **09 Aug** | **`static` Across Files (Lec 2 & 3)** — Internal vs external linkage, `extern` keyword, definition vs declaration, `static` global = file-private variable, `static` function = file-private function; all three uses of `static` covered; embedded driver encapsulation pattern. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
