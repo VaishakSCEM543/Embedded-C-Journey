@@ -23,6 +23,7 @@
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
 | [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
 | [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 6 files |
+| [**07 — Bitwise Operators**](07-Bitwise-Operators/) | AND/OR/XOR/NOT, TEST/SET/CLEAR/TOGGLE, masks, GPIO register patterns | 3 files |
 
 ---
 
@@ -112,7 +113,7 @@
 - [x] **04 — Arrays** *(Completed — initialization, passing to functions, memory footprint)*
 - → **05 — Strings in C** *(In Progress — char arrays, null terminator, algorithms)*
 - → **06 — Storage Classes** *(In Progress — static keyword, scope/visibility/lifetime)*
-- [ ] ⏳ **07 — Bitwise Operations**
+- → **07 — Bitwise Operators** *(In Progress — TEST/SET/CLEAR/TOGGLE, masks, register patterns)*
 - [ ] ⏳ **08 — Structures and Unions**
 - [ ] ⏳ **09 — STM32 Bare Metal**
 - [ ] ⏳ **10 — Communication Protocols (UART, SPI, I2C)**
@@ -151,6 +152,7 @@
 | **05 Aug** | **Flash-to-RAM Copy (Lec 3 Part 3)** — Why two copies of a string exist (Flash + Stack), compile vs startup vs runtime initialization, global vs local variable init difference, STM32 memory map (`0x0800` Flash, `0x2000` RAM). |
 | **08 Aug** | **Storage Classes — `static` Keyword (Lec 1)** — Scope, visibility, lifetime explained; why local variables lose value; global variable dangers; `static` local = function-only visibility + program-long lifetime; embedded use: ISR debounce, state machines. |
 | **09 Aug** | **`static` Across Files (Lec 2 & 3)** — Internal vs external linkage, `extern` keyword, definition vs declaration, `static` global = file-private variable, `static` function = file-private function; all three uses of `static` covered; embedded driver encapsulation pattern. |
+| **11 Aug** | **Bitwise Operators — Complete (Lec 104–110)** — AND/OR/XOR/NOT operators; TEST(`&`), SET(`|`), CLEAR(`& ~`), TOGGLE(`^`); six core identities; mask construction; `|=`, `&=`, `^=` compound operators; GPIO register programming patterns; output-based interview Q&A. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
