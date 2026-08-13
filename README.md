@@ -17,12 +17,12 @@
 
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
-| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope | 12 files |
+| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope, ASCII codes | 13 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
 | [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
-| [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 6 files |
+| [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 7 files |
 | [**07 — Bitwise Operators**](07-Bitwise-Operators/) | AND/OR/XOR/NOT, TEST/SET/CLEAR/TOGGLE, masks, GPIO register patterns | 3 files |
 
 ---
@@ -153,6 +153,8 @@
 | **08 Aug** | **Storage Classes — `static` Keyword (Lec 1)** — Scope, visibility, lifetime explained; why local variables lose value; global variable dangers; `static` local = function-only visibility + program-long lifetime; embedded use: ISR debounce, state machines. |
 | **09 Aug** | **`static` Across Files (Lec 2 & 3)** — Internal vs external linkage, `extern` keyword, definition vs declaration, `static` global = file-private variable, `static` function = file-private function; all three uses of `static` covered; embedded driver encapsulation pattern. |
 | **11 Aug** | **Bitwise Operators — Complete (Lec 104–110)** — AND/OR/XOR/NOT operators; TEST(`&`), SET(`|`), CLEAR(`& ~`), TOGGLE(`^`); six core identities; mask construction; `|=`, `&=`, `^=` compound operators; GPIO register programming patterns; output-based interview Q&A. |
+| **13 Aug** | **`extern` Keyword (Lec 4)** — Extending visibility across files, extern vs static contrast (restrict vs extend), extern implied for functions, definition vs declaration final summary; only meaningful in multi-file projects. |
+| **13 Aug** | **ASCII Codes** — ASCII = 128 chars / 7 bits; character literals `'A'` vs raw code `65`; `%c` vs `%d` format specifiers; key values (A=65, a=97, '0'=48, `\0`=0); embedded UART byte-to-char connection. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
