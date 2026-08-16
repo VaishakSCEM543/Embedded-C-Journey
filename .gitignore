@@ -6,3 +6,15 @@ git-notes.md
 *.out
 *.elf
 *.map
+
+# IDE and workspace files
+*.code-workspace
+.vscode/
+.vs/
+
+# Stray lecture notes / scratch text files outside proper module folders
+.github/*.txt
+
+# OS files
+.DS_Store
+Thumbs.db

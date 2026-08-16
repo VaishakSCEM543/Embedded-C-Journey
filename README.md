@@ -11,6 +11,8 @@
 
 > **Note:** This repository contains my personal notes, code, and exercises while learning Embedded C. Inspired by Kiran Nayak's excellent Udemy course: [Microcontroller Embedded C Programming: Absolute Beginners](https://www.udemy.com/course/microcontroller-embedded-c-programming/).
 
+> 📋 See [CHANGELOG.md](CHANGELOG.md) for the complete history of what was added and when.
+
 ---
 
 ## 📂 Repository Structure
