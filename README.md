@@ -26,6 +26,7 @@
 | [**05 — Strings**](05-Strings/) | Strings, null char, RAM vs ROM, array addresses, stack memory, Flash-to-RAM copy | 11 files |
 | [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 7 files |
 | [**07 — Bitwise Operators**](07-Bitwise-Operators/) | AND/OR/XOR/NOT, TEST/SET/CLEAR/TOGGLE, masks, GPIO register patterns | 3 files |
+| [**08 — Operators**](08-Operators/) | Unary/Binary/Ternary, arithmetic, precedence, associativity, parentheses | 3 files |
 
 ---
 
@@ -116,10 +117,11 @@
 - → **05 — Strings in C** *(In Progress — char arrays, null terminator, algorithms)*
 - → **06 — Storage Classes** *(In Progress — static keyword, scope/visibility/lifetime)*
 - → **07 — Bitwise Operators** *(In Progress — TEST/SET/CLEAR/TOGGLE, masks, register patterns)*
-- [ ] ⏳ **08 — Structures and Unions**
-- [ ] ⏳ **09 — STM32 Bare Metal**
-- [ ] ⏳ **10 — Communication Protocols (UART, SPI, I2C)**
-- [ ] ⏳ **11 — RTOS**
+- → **08 — Operators** *(In Progress — unary/binary/ternary, precedence, associativity)*
+- [ ] ⏳ **09 — Structures and Unions**
+- [ ] ⏳ **10 — STM32 Bare Metal**
+- [ ] ⏳ **11 — Communication Protocols (UART, SPI, I2C)**
+- [ ] ⏳ **12 — RTOS**
 
 ---
 
@@ -157,6 +159,8 @@
 | **11 Aug** | **Bitwise Operators — Complete (Lec 104–110)** — AND/OR/XOR/NOT operators; TEST(`&`), SET(`|`), CLEAR(`& ~`), TOGGLE(`^`); six core identities; mask construction; `|=`, `&=`, `^=` compound operators; GPIO register programming patterns; output-based interview Q&A. |
 | **13 Aug** | **`extern` Keyword (Lec 4)** — Extending visibility across files, extern vs static contrast (restrict vs extend), extern implied for functions, definition vs declaration final summary; only meaningful in multi-file projects. |
 | **13 Aug** | **ASCII Codes** — ASCII = 128 chars / 7 bits; character literals `'A'` vs raw code `65`; `%c` vs `%d` format specifiers; key values (A=65, a=97, '0'=48, `\0`=0); embedded UART byte-to-char connection. |
+| **16 Aug** | **Repo Maintenance** — Added `CHANGELOG.md` (full v0.1–v0.7 history), expanded `.gitignore` (workspace files, OS artifacts, stray .txt), linked CHANGELOG from README. |
+| **19 Aug** | **Operators — Introduction (Lec 1)** — Unary/binary/ternary types; arithmetic operators (`+`, `-`, `*`, `/`, `%`); integer division truncation; operator precedence (`*` before `+`); associativity (left-to-right for `*`/`/`); parentheses override; precedence ≠ execution order. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
