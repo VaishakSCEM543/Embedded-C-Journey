@@ -81,5 +81,35 @@ jobs:
           done
           echo "Module 05 — OK"
 
+      - name: Build Module 06 — Storage Classes (single-file)
+        working-directory: 06-Storage-Classes
+        run: |
+          gcc -Wall -Wextra -std=c99 static_demo.c -o static_demo.out
+          echo "Module 06 static_demo — OK"
+
+      - name: Build Module 06 — static file scope (multi-file)
+        working-directory: 06-Storage-Classes
+        run: |
+          gcc -Wall -Wextra -std=c99 static_file_scope_main.c static_file_scope_file1.c -o static_file_scope.out
+          echo "Module 06 static_file_scope — OK"
+
+      - name: Build Module 07 — Bitwise Operators
+        working-directory: 07-Bitwise-Operators
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 07 — OK"
+
+      - name: Build Module 08 — Operators
+        working-directory: 08-Operators
+        run: |
+          for f in *.c; do
+            echo "Compiling $f..."
+            gcc -Wall -Wextra -std=c99 "$f" -o "${f%.c}.out"
+          done
+          echo "Module 08 — OK"
+
       - name: All modules built successfully
         run: echo "✅ All Embedded C modules compiled without errors."

@@ -9,6 +9,24 @@ Follows [Keep a Changelog](https://keepachangelog.com/) conventions.
 
 ---
 
+## [0.8.0] — 2026-08-19
+
+### Added
+- **Module 08 — Operators** (`08-Operators/`)
+  - Lec 1: Unary / Binary / Ternary operator types
+  - Arithmetic operators (`+`, `-`, `*`, `/`, `%`) with integer division trap
+  - Operator precedence (`*` before `+`) and associativity (left-to-right for `*`/`/`)
+  - Parentheses as explicit grouping override
+  - Key insight: precedence ≠ evaluation order (important for `++`/`--`, `&&`/`||`)
+  - `operators_demo.c` — live demo of all concepts
+
+### Fixed
+- **CI Workflow** — Added missing build steps for Modules 06, 07, and 08
+  - Module 06 multi-file static demo now compiled correctly (`main.c` + `file1.c`)
+  - All 8 modules now verified on every push to `main`
+
+---
+
 ## [0.7.0] — 2026-08-11
 
 ### Added
