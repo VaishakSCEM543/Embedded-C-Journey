@@ -19,7 +19,28 @@
 
 | 📁 Section | 🎯 Topic Focus | 📄 Contents |
 |:---------|:-------------|:----------|
-| [**01 — Datatypes & Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope, ASCII codes | 13 files |
+<div align="center">
+  <h1>🚀 Embedded C Journey</h1>
+  <p><i>Learning embedded C systematically — one concept at a time, committed consistently.</i></p>
+  
+  ![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+  ![GCC](https://img.shields.io/badge/Compiler-GCC-F34F29?style=for-the-badge&logo=gnu&logoColor=white)
+  ![STM32](https://img.shields.io/badge/Target-STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white)
+  ![ESP32](https://img.shields.io/badge/Target-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+  ![Build](https://github.com/VaishakSCEM543/Embedded-C-Journey/actions/workflows/build.yml/badge.svg)
+</div>
+
+> **Note:** This repository contains my personal notes, code, and exercises while learning Embedded C. Inspired by Kiran Nayak's excellent Udemy course: [Microcontroller Embedded C Programming: Absolute Beginners](https://www.udemy.com/course/microcontroller-embedded-c-programming/).
+
+> 📋 See [CHANGELOG.md](CHANGELOG.md) for the complete history of what was added and when.
+
+---
+
+## 📂 Repository Structure
+
+| 📁 Section | 🎯 Topic Focus | 📄 Contents |
+|:---------|:-------------|:----------|
+| [**01 — Datatypes and Variables**](01-Datatypes-and-Variables/) | C data types, memory ranges, sizeof, scope, ASCII codes | 13 files |
 | [**02 — Pointers and Memory**](02-Pointers-and-Memory/) | Memory addresses, pointers, dereferencing, pointer types, arithmetic | 11 files |
 | [**03 — Functions**](03-Functions/) | Function definitions, prototypes, return values, multi-file projects, typecasting | 8 files |
 | [**04 — Arrays**](04-Arrays/) | Array syntax, memory storage, passing arrays | 8 files |
@@ -27,6 +48,7 @@
 | [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 7 files |
 | [**07 — Bitwise Operators**](07-Bitwise-Operators/) | AND/OR/XOR/NOT, TEST/SET/CLEAR/TOGGLE, masks, GPIO register patterns | 3 files |
 | [**08 — Operators**](08-Operators/) | Unary/Binary/Ternary, arithmetic, precedence, associativity, parentheses | 3 files |
+| [**10 — STM32 Bare Metal**](10-STM32-Bare-Metal/) | Cross compilation, SWD/SWO, ST-LINK, ITM, and `printf` internals | 1 file |
 
 ---
 
@@ -119,7 +141,7 @@
 - → **07 — Bitwise Operators** *(In Progress — TEST/SET/CLEAR/TOGGLE, masks, register patterns)*
 - → **08 — Operators** *(In Progress — unary/binary/ternary, precedence, associativity)*
 - [ ] ⏳ **09 — Structures and Unions**
-- [ ] ⏳ **10 — STM32 Bare Metal**
+- → **10 — STM32 Bare Metal** *(In Progress — printf internals, SWD/SWO, cross compilation)*
 - [ ] ⏳ **11 — Communication Protocols (UART, SPI, I2C)**
 - [ ] ⏳ **12 — RTOS**
 
@@ -161,6 +183,7 @@
 | **13 Aug** | **ASCII Codes** — ASCII = 128 chars / 7 bits; character literals `'A'` vs raw code `65`; `%c` vs `%d` format specifiers; key values (A=65, a=97, '0'=48, `\0`=0); embedded UART byte-to-char connection. |
 | **16 Aug** | **Repo Maintenance** — Added `CHANGELOG.md` (full v0.1–v0.7 history), expanded `.gitignore` (workspace files, OS artifacts, stray .txt), linked CHANGELOG from README. |
 | **19 Aug** | **Operators — Introduction (Lec 1)** — Unary/binary/ternary types; arithmetic operators (`+`, `-`, `*`, `/`, `%`); integer division truncation; operator precedence (`*` before `+`); associativity (left-to-right for `*`/`/`); parentheses override; precedence ≠ execution order. |
+| **13 Sep** | **STM32 Bare Metal Intro** — Added interview-focused notes on STM32 Hello World, `printf()`, SWD/SWO, ITM, ST-LINK, and cross compilation. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*

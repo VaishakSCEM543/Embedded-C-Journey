@@ -9,6 +9,16 @@ Follows [Keep a Changelog](https://keepachangelog.com/) conventions.
 
 ---
 
+## [0.9.0] — 2026-09-13
+
+### Added
+- **Module 10 — STM32 Bare Metal** (`10-STM32-Bare-Metal/`)
+  - Added `lecture-01-hello-world-printf.md` containing iWave interview preparation notes.
+  - Covers STM32 Hello World, `printf()`, SWD/SWO, ITM, ST-LINK, and Cross Compilation concepts.
+  - Explains the execution and debugging chain from C code to Cortex-M execution and PC trace display.
+
+---
+
 ## [0.8.0] — 2026-08-19
 
 ### Added
