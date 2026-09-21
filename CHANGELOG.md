@@ -9,6 +9,16 @@ Follows [Keep a Changelog](https://keepachangelog.com/) conventions.
 
 ---
 
+## [0.9.1] — 2026-09-21
+
+### Added
+- **Module 10 — STM32 Bare Metal** (`10-STM32-Bare-Metal/`)
+  - Added `lecture-111-113-gpio-memory-map.md` with visual notes (Mermaid diagrams) for GPIO concepts.
+  - Explains General Purpose I/O, Peripheral Registers, Memory-Mapped I/O via C pointers, and the Processor 4GB Memory Map.
+  - Documents the complete execution chain from C code pointer dereference to physical LED voltage change.
+
+---
+
 ## [0.9.0] — 2026-09-13
 
 ### Added

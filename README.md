@@ -48,7 +48,7 @@
 | [**06 — Storage Classes**](06-Storage-Classes/) | `static`, `extern`, scope, visibility, lifetime, data segment vs stack | 7 files |
 | [**07 — Bitwise Operators**](07-Bitwise-Operators/) | AND/OR/XOR/NOT, TEST/SET/CLEAR/TOGGLE, masks, GPIO register patterns | 3 files |
 | [**08 — Operators**](08-Operators/) | Unary/Binary/Ternary, arithmetic, precedence, associativity, parentheses | 3 files |
-| [**10 — STM32 Bare Metal**](10-STM32-Bare-Metal/) | Cross compilation, SWD/SWO, ST-LINK, ITM, and `printf` internals | 1 file |
+| [**10 — STM32 Bare Metal**](10-STM32-Bare-Metal/) | Cross compilation, SWD/SWO, `printf` internals, GPIO, memory-mapped I/O, memory map | 2 files |
 
 ---
 
@@ -141,7 +141,7 @@
 - → **07 — Bitwise Operators** *(In Progress — TEST/SET/CLEAR/TOGGLE, masks, register patterns)*
 - → **08 — Operators** *(In Progress — unary/binary/ternary, precedence, associativity)*
 - [ ] ⏳ **09 — Structures and Unions**
-- → **10 — STM32 Bare Metal** *(In Progress — printf internals, SWD/SWO, cross compilation)*
+- → **10 — STM32 Bare Metal** *(In Progress — printf internals, SWD/SWO, GPIO, memory map)*
 - [ ] ⏳ **11 — Communication Protocols (UART, SPI, I2C)**
 - [ ] ⏳ **12 — RTOS**
 
@@ -184,6 +184,7 @@
 | **16 Aug** | **Repo Maintenance** — Added `CHANGELOG.md` (full v0.1–v0.7 history), expanded `.gitignore` (workspace files, OS artifacts, stray .txt), linked CHANGELOG from README. |
 | **19 Aug** | **Operators — Introduction (Lec 1)** — Unary/binary/ternary types; arithmetic operators (`+`, `-`, `*`, `/`, `%`); integer division truncation; operator precedence (`*` before `+`); associativity (left-to-right for `*`/`/`); parentheses override; precedence ≠ execution order. |
 | **13 Sep** | **STM32 Bare Metal Intro** — Added interview-focused notes on STM32 Hello World, `printf()`, SWD/SWO, ITM, ST-LINK, and cross compilation. |
+| **21 Sep** | **GPIO & Memory-Mapped I/O** — Visual notes for Lectures 111-113: what a GPIO is, peripheral registers, memory-mapped I/O via C pointers, processor 4GB memory map, and the full execution chain from code to hardware. |
 
 ---
 *Consistency is the key to mastering Embedded Systems. 🛠️*
